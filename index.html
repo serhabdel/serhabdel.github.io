@@ -3,157 +3,681 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Abdelhalim Serhani Portfolio & Resume</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
+    <title>Abdelhalim Serhani's Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>My Portfolio & Resume</h1>
-        </div>
-    </header>
-
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#academic">Academic Career</a></li>
-                <li><a href="#experience">Professional Experiences</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#it">IT & Computer Science</a></li>
-                <li><a href="#languages">Languages</a></li>
-                <li><a href="#excel">Excel Dashboard & VBA</a></li>
-                <li><a href="#powerbi">PowerBI Dashboard</a></li>
-                <li><a href="#computer-science">Computer Science</a></li>
-            </ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">Abdelhalim Serhani</div>
+        <ul class="nav-links">
+            <li><a href="#home" data-i18n="nav.home">Home</a></li>
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="#certifications" data-i18n="nav.certifications">Certifications</a></li>
+            <li><a href="#courses" data-i18n="nav.courses">Courses</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+            <li class="lang-switch">
+                <button onclick="toggleLanguage()" class="lang-btn">
+                    <span class="lang-text">EN</span>
+                    <span class="lang-icon">🌐</span>
+                </button>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </nav>
 
-    <main>
-        <!-- About Me Section -->
-        <section id="about" class="section">
-            <div class="container">
-                <h2>About Me</h2>
-                <div class="content">
-                    <img src="path/to/your-photo.jpg" alt="Your Photo">
-                    <p>This is the section where you describe yourself. You can add a short biography and showcase a picture of yourself.</p>
-                </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-image">
+                <img src="assets/profile.jpg" alt="Abdelhalim Serhani" class="profile-pic">
             </div>
-        </section>
-
-        <!-- Academic Career Section -->
-        <section id="academic" class="section">
-            <div class="container">
-                <h2>Academic Career</h2>
-                <div class="content">
-                    <img src="path/to/academic-photo.jpg" alt="Academic Career">
-                    <p>List your academic background here, including your degree(s), institutions, and dates attended.</p>
-                </div>
+            <h1 data-i18n="hero.title">Hi, I'm Abdelhalim Serhani</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">Future Auditor / Management Controller</p>
+            <p class="hero-description" data-i18n="hero.description">Looking for an EOS Internship</p>
+            <p class="hero-bio" data-i18n="hero.bio">A very passionate, curious and serious young man about everything related to the world of finance and management, also about work automation, I wish to find an opportunity to strengthen my professional and personal skills.</p>
+            <div class="contact-info">
+                <a href="mailto:Serhani.Abdelhalim@Outlook.com" class="contact-link">
+                    <i class="fas fa-envelope"></i>
+                    Serhani.Abdelhalim@Outlook.com
+                </a>
+                <a href="tel:+212707400227" class="contact-link">
+                    <i class="fas fa-phone"></i>
+                    +212 707 400 227
+                </a>
+                <a href="https://www.linkedin.com/in/abdelhalim-serhani/" target="_blank" class="contact-link">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
             </div>
-        </section>
-
-        <!-- Professional Experiences Section -->
-        <section id="experience" class="section">
-            <div class="container">
-                <h2>Professional Experiences</h2>
-                <div class="content">
-                    <img src="path/to/professional-photo.jpg" alt="Professional Experiences">
-                    <p>Provide details about your professional career, including job titles, companies, and job descriptions.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Certifications Section -->
-        <section id="certifications" class="section">
-            <div class="container">
-                <h2>Certifications</h2>
-                <div class="content">
-                    <img src="path/to/certification-photo.jpg" alt="Certifications">
-                    <p>Include a list of your certifications along with supporting images or documents if necessary.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            <div class="container">
-                <h2>Skills</h2>
-                <div class="content">
-                    <ul>
-                        <li>HTML, CSS, JavaScript</li>
-                        <li>Python, SQL</li>
-                        <li>Data Analysis</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- IT & Computer Science Section -->
-        <section id="it" class="section">
-            <div class="container">
-                <h2>IT & Computer Science</h2>
-                <div class="content">
-                    <img src="path/to/computer-science-photo.jpg" alt="IT & Computer Science">
-                    <p>Describe your involvement in IT and Computer Science projects or education.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Languages Section -->
-        <section id="languages" class="section">
-            <div class="container">
-                <h2>Languages</h2>
-                <div class="content">
-                    <ul>
-                        <li>English: Fluent</li>
-                        <li>Spanish: Intermediate</li>
-                        <li>Python: Advanced</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Excel Dashboard & VBA Section -->
-        <section id="excel" class="section">
-            <div class="container">
-                <h2>Excel Dashboard & VBA</h2>
-                <div class="content">
-                    <img src="path/to/excel-dashboard.jpg" alt="Excel Dashboard & VBA">
-                    <p>Showcase some of the Excel Dashboards you've created along with VBA scripts.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- PowerBI Dashboard Section -->
-        <section id="powerbi" class="section">
-            <div class="container">
-                <h2>PowerBI Dashboard</h2>
-                <div class="content">
-                    <img src="path/to/powerbi-dashboard.jpg" alt="PowerBI Dashboard">
-                    <p>Display some of the PowerBI dashboards you've built.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Computer Science Section -->
-        <section id="computer-science" class="section">
-            <div class="container">
-                <h2>Computer Science</h2>
-                <div class="content">
-                    <img src="path/to/computer-science-photo.jpg" alt="Computer Science">
-                    <p>Provide details related to your Computer Science background.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 My Portfolio & Resume. All rights reserved.</p>
         </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 data-i18n="about.title">Academic Career</h2>
+        <div class="education-timeline">
+            <div class="timeline-item">
+                <h3 data-i18n="about.master">Master's Degree in Accounting, Control and Audit</h3>
+                <p class="institution">Faculty of Economics and Management of Beni Mellal - FEGBM</p>
+                <p class="period">2023 - 2025</p>
+            </div>
+            <div class="timeline-item">
+                <h3 data-i18n="about.bachelor">Bachelor's Degree in Finance and Accounting</h3>
+                <p class="institution">Polydisciplinary Faculty of Sidi Bennour - FPSB</p>
+                <p class="period">2020 - 2023</p>
+            </div>
+            <div class="timeline-item">
+                <h3 data-i18n="about.math">Mathematics, Computer Science, Physics and Chemistry</h3>
+                <p class="institution">Faculty of Science and Technology Beni Mellal - FSTBM</p>
+                <p class="period">2019 - 2020</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <h2 data-i18n="experience.title">Professional Experience</h2>
+        <div class="experience-items">
+            <div class="experience-item">
+                <h3 data-i18n="experience.jfc">Finance Internship | JFC IV SA - OCP SA</h3>
+                <p class="period">June 2023 - August 2023</p>
+                <ul>
+                    <li data-i18n="experience.jfc.task1">Continuation of the development of the management control system</li>
+                    <li data-i18n="experience.jfc.task2">Exploring the practice of financial analysis</li>
+                </ul>
+                <div class="tags">
+                    <span class="tag">Excel</span>
+                    <span class="tag">VBA</span>
+                    <span class="tag">Finance</span>
+                    <span class="tag">Taxation</span>
+                </div>
+            </div>
+            <div class="experience-item">
+                <h3 data-i18n="experience.management">Management Controller | End-Of-Study Internship | JFC IV SA - OCP SA</h3>
+                <p class="period">April 2023 - June 2023</p>
+                <ul>
+                    <li data-i18n="experience.management.task1">Development of a management control system for calculating product costs for two fertilizing products</li>
+                    <li data-i18n="experience.management.task2">Determination of cost centers to identify direct and indirect costs</li>
+                    <li data-i18n="experience.management.task3">Calculation of the cost price of finished products</li>
+                    <li data-i18n="experience.management.task4">Developing an Excel application with VBA for calculating daily production costs</li>
+                </ul>
+                <div class="tags">
+                    <span class="tag">Management control</span>
+                    <span class="tag">Communication</span>
+                    <span class="tag">Data collection</span>
+                    <span class="tag">Data analysis</span>
+                    <span class="tag">Advanced Excel</span>
+                    <span class="tag">VBA</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="animate fadeInUp" data-i18n="skills.title">Skills and Languages</h2>
+        <div class="skills-container">
+            <div class="skill-category animate slideInLeft">
+                <h3 data-i18n="skills.soft">Soft Skills</h3>
+                <div class="skill-items">
+                    <span class="skill-item">Critical Thinking</span>
+                    <span class="skill-item">Analytical Thinking</span>
+                    <span class="skill-item">Communication</span>
+                    <span class="skill-item">Team Work</span>
+                    <span class="skill-item">Detail-Oriented</span>
+                    <span class="skill-item">Creativity</span>
+                </div>
+            </div>
+            
+            <div class="skill-category animate slideInRight">
+                <h3 data-i18n="skills.finance">Finance</h3>
+                <div class="skill-items">
+                    <span class="skill-item">Financial Analysis</span>
+                    <span class="skill-item">Budgeting & Forecasting</span>
+                    <span class="skill-item">Absorption Costing</span>
+                    <span class="skill-item">Variable Costing</span>
+                    <span class="skill-item">ABC</span>
+                    <span class="skill-item">Taxation</span>
+                    <span class="skill-item">Auditing</span>
+                    <span class="skill-item">Investment Analysis</span>
+                    <span class="skill-item">DCF modeling</span>
+                    <span class="skill-item">Corporate Finance</span>
+                </div>
+            </div>
+
+            <div class="skill-category animate slideInLeft">
+                <h3 data-i18n="skills.management">Management</h3>
+                <div class="skill-items">
+                    <span class="skill-item">Strategic Planning</span>
+                    <span class="skill-item">Vision & Mission Dev</span>
+                    <span class="skill-item">SWOT Analysis</span>
+                    <span class="skill-item">Corporate Governance</span>
+                </div>
+            </div>
+
+            <div class="skill-category animate slideInRight">
+                <h3 data-i18n="skills.software">Software</h3>
+                <div class="software-slider">
+                    <div class="software-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg" alt="Excel" class="software-logo">
+                        <h4 data-i18n="software.excel">MS Excel</h4>
+                        <div class="proficiency-bar">
+                            <div class="proficiency-level" style="width: 95%"></div>
+                        </div>
+                        <span class="proficiency-text">Expert</span>
+                    </div>
+
+                    <div class="software-item">
+                        <img src="https://www.sage.com/en-gb/-/media/images/sagedotcom/master/logos/sage_logo_social.png" alt="Sage" class="software-logo">
+                        <h4 data-i18n="software.sage">Sage 100</h4>
+                        <div class="proficiency-bar">
+                            <div class="proficiency-level" style="width: 85%"></div>
+                        </div>
+                        <span class="proficiency-text">Advanced</span>
+                    </div>
+
+                    <div class="software-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/PowerBI_Logo.png" alt="Power BI" class="software-logo">
+                        <h4 data-i18n="software.powerbi">Power BI</h4>
+                        <div class="proficiency-bar">
+                            <div class="proficiency-level" style="width: 80%"></div>
+                        </div>
+                        <span class="proficiency-text">Advanced</span>
+                    </div>
+
+                    <div class="software-item">
+                        <img src="https://cdn.worldvectorlogo.com/logos/tableau-software.svg" alt="Tableau" class="software-logo">
+                        <h4 data-i18n="software.tableau">Tableau</h4>
+                        <div class="proficiency-bar">
+                            <div class="proficiency-level" style="width: 75%"></div>
+                        </div>
+                        <span class="proficiency-text">Proficient</span>
+                    </div>
+
+                    <div class="software-item">
+                        <img src="https://www.odoo.com/web/image/website/1/logo/Odoo?unique=dba779f" alt="Odoo" class="software-logo">
+                        <h4 data-i18n="software.odoo">Odoo ERP</h4>
+                        <div class="proficiency-bar">
+                            <div class="proficiency-level" style="width: 70%"></div>
+                        </div>
+                        <span class="proficiency-text">Proficient</span>
+                    </div>
+
+                    <div class="software-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Jira_%28Software%29_logo.svg" alt="Jira" class="software-logo">
+                        <h4 data-i18n="software.jira">Jira</h4>
+                        <div class="proficiency-bar">
+                            <div class="proficiency-level" style="width: 75%"></div>
+                        </div>
+                        <span class="proficiency-text">Proficient</span>
+                    </div>
+
+                    <div class="software-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Access_%282019-present%29.svg" alt="MS Access" class="software-logo">
+                        <h4 data-i18n="software.access">MS Access</h4>
+                        <div class="proficiency-bar">
+                            <div class="proficiency-level" style="width: 80%"></div>
+                        </div>
+                        <span class="proficiency-text">Advanced</span>
+                    </div>
+
+                    <div class="software-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png" alt="Notion" class="software-logo">
+                        <h4 data-i18n="software.notion">Notion</h4>
+                        <div class="proficiency-bar">
+                            <div class="proficiency-level" style="width: 90%"></div>
+                        </div>
+                        <span class="proficiency-text">Expert</span>
+                    </div>
+
+                    <div class="software-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Visual_Studio_Icon_2022.svg" alt="Visual Studio" class="software-logo">
+                        <h4 data-i18n="software.visualstudio">Visual Studio</h4>
+                        <div class="proficiency-bar">
+                            <div class="proficiency-level" style="width: 75%"></div>
+                        </div>
+                        <span class="proficiency-text">Proficient</span>
+                    </div>
+
+                    <div class="software-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Microsoft_Office_Project_%282019-present%29.svg" alt="MS Project" class="software-logo">
+                        <h4 data-i18n="software.project">MS Project</h4>
+                        <div class="proficiency-bar">
+                            <div class="proficiency-level" style="width: 70%"></div>
+                        </div>
+                        <span class="proficiency-text">Proficient</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category animate scaleIn">
+                <h3 data-i18n="skills.languages">Languages</h3>
+                <div class="skill-items">
+                    <span class="skill-item">Arabic (Native)</span>
+                    <span class="skill-item">French (Fluent)</span>
+                    <span class="skill-item">English (Fluent)</span>
+                </div>
+            </div>
+
+            <div class="skill-category animate slideInLeft">
+                <h3 data-i18n="skills.programming">Programming</h3>
+                <div class="skill-items">
+                    <span class="skill-item">C#</span>
+                    <span class="skill-item">VBA</span>
+                    <span class="skill-item">Python</span>
+                </div>
+            </div>
+
+            <div class="skill-category animate slideInRight">
+                <h3 data-i18n="skills.others">Others</h3>
+                <div class="skill-items">
+                    <span class="skill-item">.Net MAUI</span>
+                    <span class="skill-item">WinForms</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="animate fadeInUp" data-i18n="projects.title">Academic Projects</h2>
+        <div class="projects-grid">
+            <div class="project-item animate slideInLeft featured-project">
+                <div class="project-header">
+                    <img src="https://media.licdn.com/dms/image/C4D0BAQH9tVFFoHgUKg/company-logo_100_100/0/1631340979052?e=1714003200&v=beta&t=vS1l49nj7QTBxGn8ekAxVDPAEk7V9kKA7-EFhPkTHOE" alt="OCP" class="project-logo">
+                    <div>
+                        <h3 data-i18n="projects.management">Management Control System and Performance Monitoring</h3>
+                        <p class="institution">OCP Group - Jorf Fertilizer Company IV</p>
+                        <p class="period">Apr 2023 - Jun 2023</p>
+                    </div>
+                </div>
+                <p class="project-description" data-i18n="projects.management.description">
+                    End-of-studies project conducted at JFC IV (OCP Group) under the supervision of Mr. Mohamed Wadie LAHOUIRICH and Mr. MESKINI Otmane. Implemented a cost center analysis method to optimize indirect cost allocation and improve product cost calculation, leading to enhanced performance monitoring and decision-making processes.
+                </p>
+                <div class="project-image">
+                    <img src="assets/soutenance.jpg" alt="Abdelhalim Serhani soutenance PFE" class="presentation-image">
+                    <p class="image-caption" data-i18n="projects.management.caption">Final Project Defense Presentation</p>
+                </div>
+                <div class="tags">
+                    <span class="tag">Management Control</span>
+                    <span class="tag">Management Accounting</span>
+                    <span class="tag">Accounting</span>
+                    <span class="tag">Critical Thinking</span>
+                    <span class="tag">Analytical Skills</span>
+                    <span class="tag">Planning</span>
+                    <span class="tag">Communication</span>
+                </div>
+            </div>
+
+            <div class="project-item animate slideInRight">
+                <div class="project-header">
+                    <img src="https://media.licdn.com/dms/image/C4D0BAQH9tVFFoHgUKg/company-logo_100_100/0/1631340979052?e=1714003200&v=beta&t=vS1l49nj7QTBxGn8ekAxVDPAEk7V9kKA7-EFhPkTHOE" alt="OCP" class="project-logo">
+                    <div>
+                        <h3 data-i18n="projects.production">Production Cost Calculation Application</h3>
+                        <p class="institution">OCP Group - JFC IV</p>
+                        <p class="period">Apr 2023 - Aug 2023</p>
+                    </div>
+                </div>
+                <p class="project-description" data-i18n="projects.production.description">
+                    Developed a VBA Excel application with user management system for production cost tracking. Features include a dynamic dashboard analyzing three-day trends and automated production data analysis capabilities. The system ensures secure access control while providing comprehensive cost monitoring tools.
+                </p>
+                <div class="tags">
+                    <span class="tag">Data Visualization</span>
+                    <span class="tag">Data Analysis</span>
+                    <span class="tag">VBA Excel</span>
+                    <span class="tag">Data Modeling</span>
+                    <span class="tag">Excel Dashboards</span>
+                    <span class="tag">Management Accounting</span>
+                    <span class="tag">Critical Thinking</span>
+                    <span class="tag">Big-picture Thinking</span>
+                </div>
+            </div>
+
+            <div class="project-item animate slideInLeft">
+                <div class="project-header">
+                    <img src="https://media.licdn.com/dms/image/C4E0BAQF5t62bcL0e9g/company-logo_100_100/0/1631352996496?e=1714003200&v=beta&t=OeIJGkY-ZVNbMhPqX_f-9mHOYqvOXxnBvR0E4RYFeYQ" alt="UCD" class="project-logo">
+                    <div>
+                        <h3 data-i18n="projects.medvent">MedVent</h3>
+                        <p class="institution">Université Chouaib Doukkali El Jadida</p>
+                        <p class="period">Oct 2022 - Dec 2022</p>
+                    </div>
+                </div>
+                <p class="project-description" data-i18n="projects.medvent.description">
+                    Design of an innovative event management agency integrating multiple services into a unified platform. The solution streamlines event organization and marketing processes, significantly reducing time and resource expenditure for clients seeking comprehensive event management solutions.
+                </p>
+                <div class="contributors">
+                    <h4 data-i18n="projects.medvent.contributors">Team Size: 11 Contributors</h4>
+                </div>
+                <div class="tags">
+                    <span class="tag">Event Management</span>
+                    <span class="tag">Marketing Strategy</span>
+                    <span class="tag">Business Planning</span>
+                    <span class="tag">Service Integration</span>
+                </div>
+            </div>
+
+            <div class="project-item animate slideInRight">
+                <div class="project-header">
+                    <img src="https://media.licdn.com/dms/image/C4E0BAQF5t62bcL0e9g/company-logo_100_100/0/1631352996496?e=1714003200&v=beta&t=OeIJGkY-ZVNbMhPqX_f-9mHOYqvOXxnBvR0E4RYFeYQ" alt="UCD" class="project-logo">
+                    <div>
+                        <h3 data-i18n="projects.mofida">MoFida</h3>
+                        <p class="institution">Université Chouaib Doukkali El Jadida</p>
+                        <p class="period">Oct 2022 - Dec 2022</p>
+                    </div>
+                </div>
+                <p class="project-description" data-i18n="projects.mofida.description">
+                    Development of an organic pumpkin-based jam product line, focusing on natural ingredients and organic sugar. Created a comprehensive marketing mix (4P) strategy for product positioning and market entry, emphasizing sustainable and health-conscious consumer preferences.
+                </p>
+                <div class="contributors">
+                    <h4 data-i18n="projects.mofida.contributors">Team Size: 6 Contributors</h4>
+                </div>
+                <div class="tags">
+                    <span class="tag">Product Development</span>
+                    <span class="tag">Marketing Mix</span>
+                    <span class="tag">Organic Products</span>
+                    <span class="tag">Business Strategy</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <h2 class="animate fadeInUp" data-i18n="courses.title">Key Courses</h2>
+        <div class="courses-grid">
+            <div class="course-item animate slideInLeft">
+                <div class="course-header">
+                    <img src="https://media.licdn.com/dms/image/C4E0BAQF5t62bcL0e9g/company-logo_100_100/0/1631352996496?e=1714003200&v=beta&t=OeIJGkY-ZVNbMhPqX_f-9mHOYqvOXxnBvR0E4RYFeYQ" alt="UCD" class="course-logo">
+                    <div>
+                        <h3 data-i18n="courses.financial">Financial Analysis</h3>
+                        <p class="institution">Université Chouaib Doukkali El Jadida</p>
+                    </div>
+                </div>
+                <div class="tags">
+                    <span class="tag">Financial Ratios</span>
+                    <span class="tag">Performance Analysis</span>
+                    <span class="tag">Risk Assessment</span>
+                </div>
+            </div>
+
+            <div class="course-item animate slideInRight">
+                <div class="course-header">
+                    <img src="https://media.licdn.com/dms/image/C4E0BAQF5t62bcL0e9g/company-logo_100_100/0/1631352996496?e=1714003200&v=beta&t=OeIJGkY-ZVNbMhPqX_f-9mHOYqvOXxnBvR0E4RYFeYQ" alt="UCD" class="course-logo">
+                    <div>
+                        <h3 data-i18n="courses.markets">Financial Markets</h3>
+                        <p class="institution">Université Chouaib Doukkali El Jadida</p>
+                    </div>
+                </div>
+                <div class="tags">
+                    <span class="tag">Market Analysis</span>
+                    <span class="tag">Trading Strategies</span>
+                    <span class="tag">Portfolio Management</span>
+                </div>
+            </div>
+
+            <div class="course-item animate slideInLeft">
+                <div class="course-header">
+                    <img src="https://media.licdn.com/dms/image/C4E0BAQF5t62bcL0e9g/company-logo_100_100/0/1631352996496?e=1714003200&v=beta&t=OeIJGkY-ZVNbMhPqX_f-9mHOYqvOXxnBvR0E4RYFeYQ" alt="UCD" class="course-logo">
+                    <div>
+                        <h3 data-i18n="courses.general">General Accounting</h3>
+                        <p class="institution">Université Chouaib Doukkali El Jadida</p>
+                    </div>
+                </div>
+                <div class="tags">
+                    <span class="tag">Bookkeeping</span>
+                    <span class="tag">Financial Reporting</span>
+                    <span class="tag">Accounting Principles</span>
+                </div>
+            </div>
+
+            <div class="course-item animate slideInRight">
+                <div class="course-header">
+                    <img src="https://media.licdn.com/dms/image/C4E0BAQF5t62bcL0e9g/company-logo_100_100/0/1631352996496?e=1714003200&v=beta&t=OeIJGkY-ZVNbMhPqX_f-9mHOYqvOXxnBvR0E4RYFeYQ" alt="UCD" class="course-logo">
+                    <div>
+                        <h3 data-i18n="courses.human">Human Resources Management</h3>
+                        <p class="institution">Université Chouaib Doukkali El Jadida</p>
+                    </div>
+                </div>
+                <div class="tags">
+                    <span class="tag">Talent Management</span>
+                    <span class="tag">HR Strategy</span>
+                    <span class="tag">Employee Relations</span>
+                </div>
+            </div>
+
+            <div class="course-item animate slideInLeft">
+                <div class="course-header">
+                    <img src="https://media.licdn.com/dms/image/C4E0BAQF5t62bcL0e9g/company-logo_100_100/0/1631352996496?e=1714003200&v=beta&t=OeIJGkY-ZVNbMhPqX_f-9mHOYqvOXxnBvR0E4RYFeYQ" alt="UCD" class="course-logo">
+                    <div>
+                        <h3 data-i18n="courses.macroeconomy">Macroeconomy</h3>
+                        <p class="institution">Université Chouaib Doukkali El Jadida</p>
+                    </div>
+                </div>
+                <div class="tags">
+                    <span class="tag">Economic Analysis</span>
+                    <span class="tag">Monetary Policy</span>
+                    <span class="tag">Global Economics</span>
+                </div>
+            </div>
+
+            <div class="course-item animate slideInRight">
+                <div class="course-header">
+                    <img src="https://media.licdn.com/dms/image/C4E0BAQF5t62bcL0e9g/company-logo_100_100/0/1631352996496?e=1714003200&v=beta&t=OeIJGkY-ZVNbMhPqX_f-9mHOYqvOXxnBvR0E4RYFeYQ" alt="UCD" class="course-logo">
+                    <div>
+                        <h3 data-i18n="courses.management">Management Accounting</h3>
+                        <p class="institution">Université Chouaib Doukkali El Jadida</p>
+                    </div>
+                </div>
+                <div class="tags">
+                    <span class="tag">Cost Analysis</span>
+                    <span class="tag">Budgeting</span>
+                    <span class="tag">Performance Measurement</span>
+                </div>
+            </div>
+
+            <div class="course-item animate slideInLeft">
+                <div class="course-header">
+                    <img src="https://media.licdn.com/dms/image/C4E0BAQF5t62bcL0e9g/company-logo_100_100/0/1631352996496?e=1714003200&v=beta&t=OeIJGkY-ZVNbMhPqX_f-9mHOYqvOXxnBvR0E4RYFeYQ" alt="UCD" class="course-logo">
+                    <div>
+                        <h3 data-i18n="courses.budgeting">Budgeting and Cash Management</h3>
+                        <p class="institution">Université Chouaib Doukkali El Jadida</p>
+                    </div>
+                </div>
+                <div class="tags">
+                    <span class="tag">Financial Planning</span>
+                    <span class="tag">Cash Flow Analysis</span>
+                    <span class="tag">Budget Forecasting</span>
+                </div>
+            </div>
+
+            <div class="course-item animate slideInRight">
+                <div class="course-header">
+                    <img src="https://media.licdn.com/dms/image/C4E0BAQF5t62bcL0e9g/company-logo_100_100/0/1631352996496?e=1714003200&v=beta&t=OeIJGkY-ZVNbMhPqX_f-9mHOYqvOXxnBvR0E4RYFeYQ" alt="UCD" class="course-logo">
+                    <div>
+                        <h3 data-i18n="courses.business">Business Management</h3>
+                        <p class="institution">Université Chouaib Doukkali El Jadida</p>
+                    </div>
+                </div>
+                <div class="tags">
+                    <span class="tag">Strategic Management</span>
+                    <span class="tag">Operations</span>
+                    <span class="tag">Leadership</span>
+                </div>
+            </div>
+
+            <div class="course-item animate slideInLeft">
+                <div class="course-header">
+                    <img src="https://media.licdn.com/dms/image/C4E0BAQF5t62bcL0e9g/company-logo_100_100/0/1631352996496?e=1714003200&v=beta&t=OeIJGkY-ZVNbMhPqX_f-9mHOYqvOXxnBvR0E4RYFeYQ" alt="UCD" class="course-logo">
+                    <div>
+                        <h3 data-i18n="courses.capital">Capital Markets</h3>
+                        <p class="institution">Université Chouaib Doukkali El Jadida</p>
+                    </div>
+                </div>
+                <div class="tags">
+                    <span class="tag">Financial Markets</span>
+                    <span class="tag">Investment Analysis</span>
+                    <span class="tag">Market Research</span>
+                </div>
+            </div>
+
+            <div class="course-item animate slideInRight">
+                <div class="course-header">
+                    <img src="https://media.licdn.com/dms/image/C4E0BAQF5t62bcL0e9g/company-logo_100_100/0/1631352996496?e=1714003200&v=beta&t=OeIJGkY-ZVNbMhPqX_f-9mHOYqvOXxnBvR0E4RYFeYQ" alt="UCD" class="course-logo">
+                    <div>
+                        <h3 data-i18n="courses.corporate">Corporate Accounting</h3>
+                        <p class="institution">Université Chouaib Doukkali El Jadida</p>
+                    </div>
+                </div>
+                <div class="tags">
+                    <span class="tag">Financial Statements</span>
+                    <span class="tag">Accounting Standards</span>
+                    <span class="tag">Financial Analysis</span>
+                </div>
+            </div>
+
+            <div class="course-item animate slideInLeft">
+                <div class="course-header">
+                    <img src="https://media.licdn.com/dms/image/C4E0BAQF5t62bcL0e9g/company-logo_100_100/0/1631352996496?e=1714003200&v=beta&t=OeIJGkY-ZVNbMhPqX_f-9mHOYqvOXxnBvR0E4RYFeYQ" alt="UCD" class="course-logo">
+                    <div>
+                        <h3 data-i18n="courses.data">Data Analytics</h3>
+                        <p class="institution">Université Chouaib Doukkali El Jadida</p>
+                    </div>
+                </div>
+                <div class="tags">
+                    <span class="tag">Data Analysis</span>
+                    <span class="tag">Statistical Methods</span>
+                    <span class="tag">Business Intelligence</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <h2 class="animate fadeInUp" data-i18n="certifications.title">Certifications</h2>
+        <div class="certification-grid">
+            <div class="certification-item animate slideInLeft">
+                <div class="cert-header">
+                    <img src="https://media.licdn.com/dms/image/C4E0BAQF5t62bcL0e9g/company-logo_100_100/0/1631352996496?e=1714003200&v=beta&t=OeIJGkY-ZVNbMhPqX_f-9mHOYqvOXxnBvR0E4RYFeYQ" alt="UCD" class="cert-logo">
+                    <div>
+                        <h3 data-i18n="certifications.initiation">Initiation aux Produits de Financement et de Placement des Banques Participatives au Maroc</h3>
+                        <p class="institution">Université Chouaib Doukkali El Jadida</p>
+                    </div>
+                </div>
+                <p class="period">February 2023</p>
+                <div class="tags">
+                    <span class="tag">Islamic Finance</span>
+                    <span class="tag">Banking Products</span>
+                    <span class="tag">Investment</span>
+                    <span class="tag">Financial Analysis</span>
+                    <span class="tag">Risk Management</span>
+                </div>
+            </div>
+
+            <div class="certification-item animate slideInRight">
+                <div class="cert-header">
+                    <img src="https://media.licdn.com/dms/image/C560BAQFQr9e68bBOPQ/company-logo_100_100/0/1630640869849/openclassrooms_logo?e=1714003200&v=beta&t=Wm-c-pQFoVEHlsdXZhUgpOXBwfBNUMC_kqfhvzEXyDc" alt="OpenClassrooms" class="cert-logo">
+                    <div>
+                        <h3 data-i18n="certifications.excel">Perfect your excel skills</h3>
+                        <p class="institution">OpenClassrooms</p>
+                    </div>
+                </div>
+                <p class="period">February 2023</p>
+                <div class="tags">
+                    <span class="tag">Microsoft Excel</span>
+                    <span class="tag">Excel Dashboards</span>
+                    <span class="tag">Problem Solving</span>
+                    <span class="tag">Data Analysis</span>
+                </div>
+            </div>
+
+            <div class="certification-item animate slideInLeft">
+                <div class="cert-header">
+                    <img src="https://media.licdn.com/dms/image/C4E0BAQGkVZpl9w8uQg/company-logo_100_100/0/1630536914848/hp_logo?e=1714003200&v=beta&t=oPrHZNjqZ8Hn5VZbWVBE57wtFqXGk-6fXW4nT-Xm9Yk" alt="HP" class="cert-logo">
+                    <div>
+                        <h3 data-i18n="certifications.sales">Sales Forecasting</h3>
+                        <p class="institution">HP</p>
+                    </div>
+                </div>
+                <p class="period">February 2023</p>
+                <div class="tags">
+                    <span class="tag">Forecasting</span>
+                    <span class="tag">Data Analysis</span>
+                    <span class="tag">Business Intelligence</span>
+                    <span class="tag">Strategic Planning</span>
+                </div>
+            </div>
+
+            <div class="certification-item animate slideInRight">
+                <div class="cert-header">
+                    <img src="https://media.licdn.com/dms/image/C4D0BAQFQr9e68bBOPQ/company-logo_100_100/0/1630618854285/udemy_logo?e=1714003200&v=beta&t=PGTQPiZxROefb_tKQGqE9mGHdoX4qcAcqCZZE5UvSXk" alt="Udemy" class="cert-logo">
+                    <div>
+                        <h3 data-i18n="certifications.master">Master all the MS Excel Macros and the basics of Excel VBA</h3>
+                        <p class="institution">Udemy</p>
+                    </div>
+                </div>
+                <p class="period">January 2023</p>
+                <div class="tags">
+                    <span class="tag">Excel VBA</span>
+                    <span class="tag">Macros</span>
+                    <span class="tag">Automation</span>
+                    <span class="tag">Programming</span>
+                </div>
+            </div>
+
+            <div class="certification-item animate slideInLeft">
+                <div class="cert-header">
+                    <img src="https://media.licdn.com/dms/image/C4E0BAQF1dg2KtKFdPg/company-logo_100_100/0/1630653542268?e=1714003200&v=beta&t=UbR45ZJTc-G4L-nd-Df8vj7JrM2-_3XFHF4_05VLqQk" alt="Google" class="cert-logo">
+                    <div>
+                        <h3 data-i18n="certifications.google">Google Data Analytics</h3>
+                        <p class="institution">Coursera</p>
+                    </div>
+                </div>
+                <p class="period">July 2024</p>
+                <div class="tags">
+                    <span class="tag">Data Analysis</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">Tableau</span>
+                    <span class="tag">R Programming</span>
+                    <span class="tag">Data Visualization</span>
+                    <span class="tag">Data Cleaning</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 data-i18n="contact.title">Get In Touch</h2>
+        <div class="contact-content">
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn primary" data-i18n="contact.send">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2023 Abdelhalim Serhani. All rights reserved.</p>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
