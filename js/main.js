@@ -200,3 +200,116 @@ document.addEventListener('DOMContentLoaded', () => {
     updateContent();
     console.log('Initial language:', currentLang); // Debug log
 });
+
+// Mobile Interaction Enhancements
+document.addEventListener('DOMContentLoaded', () => {
+    // Touch-friendly navigation
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    // Improved mobile menu toggle with touch support
+    hamburger?.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+
+    // Close mobile menu when a link is clicked
+    navLinks?.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+        });
+    });
+
+    // Performance and Accessibility Improvements
+    // Debounce function for scroll and resize events
+    function debounce(func, wait = 20, immediate = true) {
+        let timeout;
+        return function() {
+            const context = this, args = arguments;
+            const later = function() {
+                timeout = null;
+                if (!immediate) func.apply(context, args);
+            };
+            const callNow = immediate && !timeout;
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+            if (callNow) func.apply(context, args);
+        };
+    }
+
+    // Optimize scroll performance
+    const optimizedScroll = debounce(() => {
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.pageYOffset >= (sectionTop - sectionHeight / 2)) {
+                section.classList.add('active');
+            }
+        });
+    });
+
+    window.addEventListener('scroll', optimizedScroll);
+
+    // Touch-friendly hover effects for mobile
+    const touchableElements = document.querySelectorAll('.software-item, .project-item, .skill-item');
+    touchableElements.forEach(element => {
+        let touchCount = 0;
+        element.addEventListener('touchstart', (e) => {
+            touchCount++;
+            if (touchCount === 2) {
+                element.classList.toggle('touched');
+            }
+            setTimeout(() => { touchCount = 0; }, 300);
+        });
+    });
+
+    // Prevent default touch behaviors that might interfere with scrolling
+    document.addEventListener('touchmove', (e) => {
+        if (e.touches.length > 1) {
+            e.preventDefault();
+        }
+    }, { passive: false });
+
+    // Lazy load images for performance
+    const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+    if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const image = entry.target;
+                    image.src = image.dataset.src;
+                    image.classList.add('loaded');
+                    observer.unobserve(image);
+                }
+            });
+        }, { rootMargin: "50px" });
+
+        lazyImages.forEach(img => imageObserver.observe(img));
+    }
+
+    // PWA-like experience: Add to home screen prompt
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            const installPrompt = document.createElement('div');
+            installPrompt.classList.add('install-prompt');
+            installPrompt.innerHTML = `
+                <p>Add this portfolio to your home screen?</p>
+                <button id="install-btn">Install</button>
+            `;
+            document.body.appendChild(installPrompt);
+
+            document.getElementById('install-btn')?.addEventListener('click', () => {
+                e.prompt();
+                e.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('User accepted the A2HS prompt');
+                    }
+                    installPrompt.remove();
+                });
+            });
+        });
+    }
+});
