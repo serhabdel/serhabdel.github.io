@@ -2,6 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contactForm');
     const contactMethods = document.querySelectorAll('.contact-method');
+    const formStatus = document.getElementById('form-status');
 
     // Animate contact methods on page load
     contactMethods.forEach((method, index) => {
@@ -17,26 +18,56 @@ document.addEventListener('DOMContentLoaded', () => {
     // Form submission handler
     contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
-
-        // Get form data
-        const formData = new FormData(contactForm);
-        const data = Object.fromEntries(formData.entries());
-
-        // Here you would typically send the data to a server
-        // For now, we'll just show a success message
         const submitBtn = contactForm.querySelector('.submit-btn');
         const originalContent = submitBtn.innerHTML;
 
+        // Update button state
         submitBtn.innerHTML = `
-            <span>Message Sent!</span>
-            <i class="fas fa-check"></i>
+            <span>Sending...</span>
+            <i class="fas fa-spinner fa-spin"></i>
         `;
-        submitBtn.style.backgroundColor = '#4CAF50';
         submitBtn.disabled = true;
 
-        // Reset form and button after 3 seconds
+        try {
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: new FormData(contactForm),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                // Success message
+                formStatus.innerHTML = `
+                    <div class="alert success">
+                        <i class="fas fa-check-circle"></i>
+                        Thank you for your message! I'll get back to you soon.
+                    </div>
+                `;
+                contactForm.reset();
+                submitBtn.innerHTML = `
+                    <span>Message Sent!</span>
+                    <i class="fas fa-check"></i>
+                `;
+                submitBtn.style.backgroundColor = '#4CAF50';
+            } else {
+                throw new Error('Form submission failed');
+            }
+        } catch (error) {
+            // Error message
+            formStatus.innerHTML = `
+                <div class="alert error">
+                    <i class="fas fa-exclamation-circle"></i>
+                    Oops! There was a problem sending your message. Please try again.
+                </div>
+            `;
+            submitBtn.innerHTML = originalContent;
+            submitBtn.style.backgroundColor = '';
+        }
+
+        // Reset button after 3 seconds
         setTimeout(() => {
-            contactForm.reset();
             submitBtn.innerHTML = originalContent;
             submitBtn.style.backgroundColor = '';
             submitBtn.disabled = false;
@@ -52,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         input.addEventListener('input', () => {
-            if (input.classList.contains('error')) {
+            if (input.validity.valid) {
                 input.classList.remove('error');
             }
         });

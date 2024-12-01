@@ -6,6 +6,7 @@
     <title>Projects - Abdelhalim Serhani</title>
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/pages/projects.css">
+    <link rel="stylesheet" href="../styles/components/carousel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -23,72 +24,223 @@
             <li><a href="courses.html">Courses</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
         </div>
     </nav>
 
-    <!-- Projects Section -->
-    <section class="projects">
-        <h2 class="section-title">Academic Projects</h2>
-        <div class="projects-grid">
-            <div class="project-item featured-project">
-                <div class="project-header">
-                    <img src="https://media.licdn.com/dms/image/C4D0BAQH9tVFFoHgUKg/company-logo_100_100/0/1631340979052?e=1714003200&v=beta&t=vS1l49nj7QTBxGn8ekAxVDPAEk7V9kKA7-EFhPkTHOE" alt="OCP" class="project-logo">
-                    <div>
-                        <h3>Management Control System Development</h3>
-                        <p class="project-subtitle">JFC IV SA - OCP SA</p>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <p class="project-description">
-                        Developed a comprehensive management control system for calculating product costs for two fertilizing products. The system includes:
-                    </p>
-                    <ul class="project-features">
-                        <li>Cost center determination for direct and indirect costs</li>
-                        <li>Finished product cost price calculation</li>
-                        <li>Excel application with VBA for daily production costs</li>
-                        <li>Automated reporting system</li>
-                    </ul>
-                    <div class="project-tech">
-                        <span class="tech-tag">Excel</span>
-                        <span class="tech-tag">VBA</span>
-                        <span class="tech-tag">Management Control</span>
-                        <span class="tech-tag">Cost Analysis</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-item">
-                <div class="project-header">
-                    <img src="https://media.licdn.com/dms/image/C4E0BAQF5t62bcL0e9g/company-logo_100_100/0/1631352996496?e=1714003200&v=beta&t=OeIJGkY-ZVNbMhPqX_f-9mHOYqvOXxnBvR0E4RYFeYQ" alt="UCD" class="project-logo">
-                    <div>
-                        <h3>MedVent</h3>
-                        <p class="project-subtitle">Academic Project</p>
-                    </div>
-                </div>
-                <div class="project-content">
-                    <p class="project-description">
-                        Financial analysis and business plan development for a medical equipment venture.
-                    </p>
-                    <ul class="project-features">
-                        <li>Market analysis and feasibility study</li>
-                        <li>Financial projections and modeling</li>
-                        <li>Risk assessment and mitigation strategies</li>
-                    </ul>
-                    <div class="project-tech">
-                        <span class="tech-tag">Financial Analysis</span>
-                        <span class="tech-tag">Business Planning</span>
-                        <span class="tech-tag">Market Research</span>
-                    </div>
-                </div>
-            </div>
+    <main class="projects-container">
+        <h1 class="section-title">Projects Portfolio</h1>
+        <div class="project-categories">
+            <button class="category-btn active" data-category="all">All Projects</button>
+            <button class="category-btn" data-category="academic">Academic</button>
+            <button class="category-btn" data-category="personal">Personal</button>
+            <button class="category-btn" data-category="dashboard">Dashboards</button>
+            <button class="category-btn" data-category="vba">VBA Excel</button>
         </div>
-    </section>
 
-    <script src="../js/common.js"></script>
+        <div class="projects-grid">
+            <!-- VBA Projects -->
+            <div class="project-card" data-category="vba">
+                <h3>Cost Management System</h3>
+                <div class="carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-slide">
+                            <img src="../assets/projects/vba/project1/image1.png" alt="Main Dashboard">
+                            <div class="carousel-caption">Main Dashboard Interface</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="../assets/projects/vba/project1/image2.png" alt="Data Entry Form">
+                            <div class="carousel-caption">Custom Data Entry Form</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="../assets/projects/vba/project1/image3.png" alt="Cost Analysis">
+                            <div class="carousel-caption">Cost Analysis Module</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="../assets/projects/vba/project1/image4.png" alt="Report Generation">
+                            <div class="carousel-caption">Automated Report Generation</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="../assets/projects/vba/project1/image5.png" alt="Data Visualization">
+                            <div class="carousel-caption">Interactive Data Visualization</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="../assets/projects/vba/project1/image6.png" alt="Settings Panel">
+                            <div class="carousel-caption">System Configuration Panel</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="../assets/projects/vba/project1/image7.png" alt="Performance Metrics">
+                            <div class="carousel-caption">Performance Metrics Dashboard</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="../assets/projects/vba/project1/image8.png" alt="Export Options">
+                            <div class="carousel-caption">Export and Sharing Options</div>
+                        </div>
+                    </div>
+                    <div class="carousel-nav">
+                        <button class="carousel-button prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-button next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="carousel-dots"></div>
+                </div>
+                <div class="project-info">
+                    <p>Advanced Excel VBA-based cost management system with automated reporting, data visualization, and interactive dashboards.</p>
+                    <div class="project-tags">
+                        <span>VBA</span>
+                        <span>Excel</span>
+                        <span>Cost Management</span>
+                        <span>Automation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="vba">
+                <h3>Financial Analysis Tool</h3>
+                <div class="carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-slide">
+                            <img src="../assets/projects/vba/project2/image1.png" alt="Financial Dashboard">
+                            <div class="carousel-caption">Financial Analysis Dashboard</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="../assets/projects/vba/project2/image2.png" alt="Performance Metrics">
+                            <div class="carousel-caption">Performance Metrics Overview</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="../assets/projects/vba/project2/image3.png" alt="Data Analysis">
+                            <div class="carousel-caption">Advanced Data Analysis Module</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="../assets/projects/vba/project2/image4.png" alt="Report Generation">
+                            <div class="carousel-caption">Automated Report Generation</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="../assets/projects/vba/project2/image5.png" alt="Settings Interface">
+                            <div class="carousel-caption">System Configuration Interface</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="../assets/projects/vba/project2/image6.png" alt="Data Visualization">
+                            <div class="carousel-caption">Interactive Data Visualization</div>
+                        </div>
+                    </div>
+                    <div class="carousel-nav">
+                        <button class="carousel-button prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-button next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="carousel-dots"></div>
+                </div>
+                <div class="project-info">
+                    <p>Comprehensive financial analysis tool with automated reporting, interactive dashboards, and advanced data visualization capabilities.</p>
+                    <div class="project-tags">
+                        <span>VBA</span>
+                        <span>Excel</span>
+                        <span>Financial Analysis</span>
+                        <span>Data Visualization</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dashboard Projects -->
+            <div class="project-card" data-category="dashboard">
+                <h3>Countries Comparison Dashboard</h3>
+                <div class="carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-slide">
+                            <img src="../assets/projects/dashboard/project1/image1.png" alt="GDP Comparison">
+                            <div class="carousel-caption">GDP Comparative Analysis</div>
+                        </div>
+                    </div>
+                    <div class="carousel-nav">
+                        <button class="carousel-button prev"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-button next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="carousel-dots"></div>
+                </div>
+                <div class="project-info">
+                    <p>Comprehensive data visualization dashboard comparing economic and social indicators across multiple countries. Leveraged advanced data analysis techniques to present complex global economic data in an intuitive, interactive format.</p>
+                    <div class="project-tags">
+                        <span>Dashboard</span>
+                        <span>GDP</span>
+                        <span>Poverty Rate</span>
+                        <span>Data Visualization</span>
+                        <span>Economic Analysis</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personal Projects -->
+            <div class="project-card" data-category="personal">
+                <h3>Portfolio Website</h3>
+                <img src="../assets/projects/personal/portfolio.jpg" alt="Portfolio Website">
+                <div class="project-info">
+                    <p>Personal portfolio website built with modern web technologies.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Academic Projects -->
+            <div class="project-card" data-category="academic">
+                <h3>Production Cost Calculator</h3>
+                <div class="project-info">
+                    <p>Excel VBA application developed for JFC V S.A to manage and analyze production costs. Features include user access management, production cost tracking, and automated trend analysis dashboard.</p>
+                    <div class="project-meta">
+                        <div class="project-duration"><i class="far fa-calendar-alt"></i> Apr 2023 - Aug 2023</div>
+                        <div class="organization"><i class="far fa-building"></i> OCF Group</div>
+                    </div>
+                    <div class="project-tags">
+                        <span>VBA Excel</span>
+                        <span>Data Analysis</span>
+                        <span>Dashboard Design</span>
+                        <span>Cost Management</span>
+                        <span>User Management</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="academic">
+                <h3>MedVent</h3>
+                <div class="project-info">
+                    <p>Event management and communication agency project at Université Chouaib Doukkali El Jadida. Led a team of 11 members to develop a solution for streamlining event organization and project marketing services, focusing on time and cost efficiency.</p>
+                    <div class="project-meta">
+                        <div class="project-duration">Oct 2022 - Dec 2022</div>
+                        <div class="team-size"><i class="fas fa-users"></i> Team of 11</div>
+                    </div>
+                    <div class="project-tags">
+                        <span>Event Management</span>
+                        <span>Team Leadership</span>
+                        <span>Project Planning</span>
+                        <span>Marketing</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="academic">
+                <h3>MoFida</h3>
+                <div class="project-info">
+                    <p>Developed a natural jam product using citrus fruit with organic ingredients, creating a comprehensive marketing plan. Collaborated with a team of 6 members at Université Chouaib Doukkali El Jadida to establish product positioning and go-to-market strategy.</p>
+                    <div class="project-meta">
+                        <div class="project-duration">Oct 2022 - Dec 2022</div>
+                        <div class="team-size"><i class="fas fa-users"></i> Team of 6</div>
+                    </div>
+                    <div class="project-tags">
+                        <span>Product Development</span>
+                        <span>Marketing Strategy</span>
+                        <span>Market Research</span>
+                        <span>Team Collaboration</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more project cards for each category -->
+        </div>
+    </main>
+
+    <script src="../js/navbar.js"></script>
     <script src="../js/pages/projects.js"></script>
 </body>
 </html>

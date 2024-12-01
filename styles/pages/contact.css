@@ -152,6 +152,46 @@
     transform: translateX(5px);
 }
 
+.form-status {
+    margin-top: 1rem;
+}
+
+.alert {
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    animation: slideIn 0.3s ease-out;
+}
+
+.alert i {
+    font-size: 1.2rem;
+}
+
+.alert.success {
+    background-color: rgba(76, 175, 80, 0.1);
+    color: #4CAF50;
+    border: 1px solid #4CAF50;
+}
+
+.alert.error {
+    background-color: rgba(244, 67, 54, 0.1);
+    color: #f44336;
+    border: 1px solid #f44336;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @media (max-width: 968px) {
     .contact-container {
         grid-template-columns: 1fr;
