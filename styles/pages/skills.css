@@ -251,91 +251,143 @@
     line-height: 1.5;
 }
 
-/* Languages */
+/* Languages Section */
 .languages-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
 }
 
 .language-item {
-    background: var(--bg-secondary);
-    border: 1px solid var(--card-border);
+    background: var(--card-bg);
     border-radius: 12px;
     padding: 1.5rem;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .language-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.language-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.language-flag {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .language-name {
-    display: block;
     font-size: 1.2rem;
+    font-weight: 600;
     color: var(--text-primary);
-    margin-bottom: 0.75rem;
-    font-weight: 500;
 }
 
 .language-level {
-    display: inline-block;
-    padding: 0.25rem 1rem;
-    border-radius: 15px;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-    font-weight: 500;
-}
-
-.language-level.native {
-    background: linear-gradient(to right, #4CAF50, #45a049);
-    color: var(--bg-primary);
-}
-
-.language-level.fluent {
-    background: linear-gradient(to right, #2196F3, #1976D2);
-    color: var(--bg-primary);
-}
-
-.language-level.professional {
-    background: linear-gradient(to right, #FFC107, #FFA000);
-    color: var(--bg-primary);
-}
-
-.language-level.beginner {
-    background: linear-gradient(to right, #9E9E9E, #757575);
-    color: var(--bg-primary);
-}
-
-.language-details {
     display: flex;
-    justify-content: space-around;
-    color: var(--text-secondary);
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.level-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.level-label {
     font-size: 0.9rem;
-    margin-top: 0.5rem;
+    color: var(--text-secondary);
 }
 
-.language-details span {
-    position: relative;
-    padding-bottom: 0.25rem;
+.level-percentage {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--accent-color);
 }
 
-.language-details span::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.level-bar {
     width: 100%;
-    height: 2px;
-    background: var(--accent-primary);
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
+    height: 8px;
+    background: var(--bg-secondary);
+    border-radius: 4px;
+    overflow: hidden;
 }
 
-.language-item:hover .language-details span::after {
-    transform: scaleX(1);
+.level-progress {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.level-progress.native {
+    background: linear-gradient(to right, #4CAF50, #45a049);
+}
+
+.level-progress.fluent {
+    background: linear-gradient(to right, #2196F3, #1976D2);
+}
+
+.level-progress.intermediate {
+    background: linear-gradient(to right, #FFC107, #FFA000);
+}
+
+.level-progress.beginner {
+    background: linear-gradient(to right, #FF5722, #F4511E);
+}
+
+.language-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.skill-tag {
+    padding: 0.3rem 0.8rem;
+    background: var(--bg-secondary);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    background: var(--accent-color);
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .languages-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .language-item {
+        padding: 1.2rem;
+    }
+
+    .language-header {
+        margin-bottom: 1.2rem;
+    }
+
+    .language-flag {
+        width: 24px;
+        height: 24px;
+    }
+
+    .language-name {
+        font-size: 1.1rem;
+    }
 }
 
 /* Programming Languages */
