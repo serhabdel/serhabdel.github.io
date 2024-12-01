@@ -1,20 +1,26 @@
 // Common JavaScript functionality
 document.addEventListener('DOMContentLoaded', () => {
     // Mobile navigation toggle
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
+    const menuBtn = document.querySelector('.menu-btn');
+    const navRight = document.querySelector('.nav-right');
 
-    hamburger?.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        hamburger.classList.toggle('active');
+    menuBtn?.addEventListener('click', (e) => {
+        e.stopPropagation(); // Prevent event from bubbling
+        navRight.classList.toggle('open');
+        menuBtn.classList.toggle('open');
     });
 
     // Close mobile menu when clicking outside
     document.addEventListener('click', (e) => {
-        if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
-            navLinks.classList.remove('active');
-            hamburger.classList.remove('active');
+        if (navRight && !menuBtn.contains(e.target) && !navRight.contains(e.target)) {
+            navRight.classList.remove('open');
+            menuBtn.classList.remove('open');
         }
+    });
+
+    // Prevent menu from closing when clicking inside nav-right
+    navRight?.addEventListener('click', (e) => {
+        e.stopPropagation();
     });
 
     // Smooth scrolling for anchor links
@@ -26,6 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 target.scrollIntoView({
                     behavior: 'smooth'
                 });
+                // Close mobile menu after navigation
+                navRight?.classList.remove('open');
+                menuBtn?.classList.remove('open');
             }
         });
     });
