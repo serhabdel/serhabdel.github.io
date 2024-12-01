@@ -1,0 +1,55 @@
+/* About page specific styles */
+.about {
+    background: var(--bg-primary);
+    padding-top: 100px;
+}
+
+.education-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.timeline-item {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateY(-5px);
+}
+
+.timeline-item h3 {
+    color: var(--accent-primary);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.institution {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.period {
+    color: var(--accent-secondary);
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .education-timeline {
+        padding: 1rem;
+    }
+
+    .timeline-item {
+        padding: 1.5rem;
+    }
+
+    .timeline-item h3 {
+        font-size: 1.2rem;
+    }
+}

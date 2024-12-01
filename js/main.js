@@ -3,18 +3,13 @@ const animateOnScroll = () => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = 1;
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.classList.add('visible');
             }
         });
     }, { threshold: 0.1 });
 
     document.querySelectorAll('.animate').forEach((element) => {
         observer.observe(element);
-        // Set initial state
-        element.style.opacity = 0;
-        element.style.transform = 'translateY(20px)';
-        element.style.transition = 'all 0.6s ease';
     });
 };
 
@@ -87,6 +82,12 @@ window.addEventListener('scroll', () => {
 // Initialize animations when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     animateOnScroll();
+    
+    // Add visible class to hero section immediately
+    const heroSection = document.querySelector('#home');
+    if (heroSection) {
+        heroSection.classList.add('visible');
+    }
 });
 
 // Skills hover effect
