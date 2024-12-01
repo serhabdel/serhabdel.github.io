@@ -17,56 +17,123 @@
     border: 1px solid var(--card-border);
     border-radius: 12px;
     padding: 2rem;
+    margin-bottom: 3rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
 }
 
 .skill-category h3 {
-    color: var(--accent-primary);
-    margin-bottom: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
     font-size: 1.5rem;
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.5rem;
 }
 
 .skill-category h3 i {
-    font-size: 1.25rem;
+    font-size: 1.2em;
 }
 
-/* Finance Skills */
 .skill-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
 }
 
 .skill-item {
     background: var(--bg-secondary);
-    padding: 1rem;
-    border-radius: 8px;
-    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
 }
 
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-color: var(--accent-color);
+}
+
+.skill-item:nth-child(1) { animation-delay: 0.1s; }
+.skill-item:nth-child(2) { animation-delay: 0.2s; }
+.skill-item:nth-child(3) { animation-delay: 0.3s; }
+.skill-item:nth-child(4) { animation-delay: 0.4s; }
+.skill-item:nth-child(5) { animation-delay: 0.5s; }
+
 .skill-name {
-    display: block;
-    margin-bottom: 0.75rem;
-    color: var(--text-primary);
+    font-size: 1.1rem;
     font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.skill-details {
+    margin: 1rem 0;
+}
+
+.skill-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-details li {
+    color: var(--text-secondary);
+    margin: 0.5rem 0;
+    padding-left: 1.2rem;
+    position: relative;
+    font-size: 0.9rem;
+}
+
+.skill-details li::before {
+    content: "•";
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .skill-bar {
-    width: 100%;
     height: 6px;
     background: var(--bg-primary);
     border-radius: 3px;
     overflow: hidden;
+    margin-top: 1rem;
 }
 
 .skill-progress {
     height: 100%;
-    background: linear-gradient(to right, var(--accent-primary), var(--accent-secondary));
+    background: linear-gradient(90deg, var(--accent-color) 0%, var(--accent-color-light) 100%);
     border-radius: 3px;
-    transition: width 1s ease-in-out;
+    transform: translateX(-100%);
+    animation: slideIn 1s ease forwards;
 }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Finance Skills */
 
 /* Software Skills */
 .software-grid {
@@ -383,5 +450,15 @@
 
     .software-icon {
         margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .skill-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skill-item {
+        padding: 1.2rem;
     }
 }

@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courses - Abdelhalim Serhani</title>
-    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/pages/courses.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-logo">Abdelhalim Serhani</div>
         <ul class="nav-links">
@@ -23,82 +21,211 @@
             <li><a href="courses.html" class="active">Courses</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
         </div>
     </nav>
 
-    <!-- Courses Section -->
-    <section class="courses">
-        <h2 class="section-title">Key Courses</h2>
+    <main class="courses-container">
+        <h1 class="section-title">Academic Courses</h1>
+        <p class="section-subtitle">Associated with Université Chouaib Doukkali El Jadida</p>
+
         <div class="courses-grid">
-            <div class="course-item">
-                <div class="course-header">
-                    <img src="https://media.licdn.com/dms/image/C4E0BAQF5t62bcL0e9g/company-logo_100_100/0/1631352996496?e=1714003200&v=beta&t=OeIJGkY-ZVNbMhPqX_f-9mHOYqvOXxnBvR0E4RYFeYQ" alt="UCD" class="course-logo">
-                    <div>
+            <!-- Management & Control Courses -->
+            <div class="course-category">
+                <h2><i class="fas fa-tasks"></i> Management Control</h2>
+                <div class="course-items">
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
                         <h3>Management Accounting</h3>
-                        <p class="course-institution">UCD</p>
+                        <p>Advanced management accounting principles and cost control systems.</p>
+                        <div class="course-tags">
+                            <span>Cost Analysis</span>
+                            <span>Performance Metrics</span>
+                        </div>
                     </div>
-                </div>
-                <div class="course-content">
-                    <p class="course-description">
-                        Advanced concepts in management accounting, including cost analysis, budgeting, and performance measurement.
-                    </p>
-                    <ul class="course-topics">
-                        <li>Cost Behavior Analysis</li>
-                        <li>Budgeting Techniques</li>
-                        <li>Performance Evaluation</li>
-                        <li>Decision Making Tools</li>
-                    </ul>
-                    <div class="course-details">
-                        <span class="course-duration">
-                            <i class="far fa-clock"></i>
-                            60 Hours
-                        </span>
-                        <span class="course-status completed">
-                            <i class="fas fa-check-circle"></i>
-                            Completed
-                        </span>
+
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Management Control</h3>
+                        <p>Strategic control systems and performance measurement frameworks.</p>
+                        <div class="course-tags">
+                            <span>KPIs</span>
+                            <span>Control Systems</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="course-item">
-                <div class="course-header">
-                    <img src="https://media.licdn.com/dms/image/C4E0BAQF5t62bcL0e9g/company-logo_100_100/0/1631352996496?e=1714003200&v=beta&t=OeIJGkY-ZVNbMhPqX_f-9mHOYqvOXxnBvR0E4RYFeYQ" alt="UCD" class="course-logo">
-                    <div>
-                        <h3>Financial Analysis</h3>
-                        <p class="course-institution">UCD</p>
+            <!-- Strategic Management Courses -->
+            <div class="course-category">
+                <h2><i class="fas fa-chess"></i> Strategic Management</h2>
+                <div class="course-items">
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Strategic Management</h3>
+                        <p>Corporate strategy development and implementation processes.</p>
+                        <div class="course-tags">
+                            <span>Strategy</span>
+                            <span>Planning</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3>Strategic Marketing</h3>
+                        <p>Marketing strategy and brand management principles.</p>
+                        <div class="course-tags">
+                            <span>Marketing Strategy</span>
+                            <span>Brand Management</span>
+                        </div>
                     </div>
                 </div>
-                <div class="course-content">
-                    <p class="course-description">
-                        Comprehensive study of financial statement analysis and business valuation techniques.
-                    </p>
-                    <ul class="course-topics">
-                        <li>Financial Statement Analysis</li>
-                        <li>Ratio Analysis</li>
-                        <li>Cash Flow Analysis</li>
-                        <li>Business Valuation</li>
-                    </ul>
-                    <div class="course-details">
-                        <span class="course-duration">
-                            <i class="far fa-clock"></i>
-                            45 Hours
-                        </span>
-                        <span class="course-status completed">
-                            <i class="fas fa-check-circle"></i>
-                            Completed
-                        </span>
+            </div>
+
+            <!-- Operations & Supply Chain -->
+            <div class="course-category">
+                <h2><i class="fas fa-truck"></i> Operations Management</h2>
+                <div class="course-items">
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <h3>Supply Chain Management</h3>
+                        <p>Supply chain optimization and logistics management.</p>
+                        <div class="course-tags">
+                            <span>Logistics</span>
+                            <span>Operations</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3>Operational Marketing</h3>
+                        <p>Implementation of marketing strategies and operational tactics.</p>
+                        <div class="course-tags">
+                            <span>Marketing Ops</span>
+                            <span>Implementation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Economics & Statistics -->
+            <div class="course-category">
+                <h2><i class="fas fa-chart-bar"></i> Economics & Statistics</h2>
+                <div class="course-items">
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h3>Microeconomie</h3>
+                        <p>Economic decision-making at individual and firm level.</p>
+                        <div class="course-tags">
+                            <span>Economic Theory</span>
+                            <span>Market Analysis</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3>Statistics and Probabilities</h3>
+                        <p>Statistical analysis and probability theory applications.</p>
+                        <div class="course-tags">
+                            <span>Data Analysis</span>
+                            <span>Statistical Methods</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-poll"></i>
+                        </div>
+                        <h3>Sampling and Estimating</h3>
+                        <p>Statistical sampling techniques and estimation methods.</p>
+                        <div class="course-tags">
+                            <span>Sampling Methods</span>
+                            <span>Statistical Inference</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Finance Courses -->
+            <div class="course-category">
+                <h2><i class="fas fa-dollar-sign"></i> Finance</h2>
+                <div class="course-items">
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h3>Financial Analysis</h3>
+                        <p>Advanced techniques in financial statement analysis and valuation.</p>
+                        <div class="course-tags">
+                            <span>Financial Ratios</span>
+                            <span>Valuation</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Capital Markets</h3>
+                        <p>Understanding financial markets and investment instruments.</p>
+                        <div class="course-tags">
+                            <span>Markets</span>
+                            <span>Investments</span>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <h3>Budgeting and Cash Management</h3>
+                        <p>Cash flow management and budgeting techniques.</p>
+                        <div class="course-tags">
+                            <span>Cash Flow</span>
+                            <span>Budgeting</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Taxation -->
+            <div class="course-category">
+                <h2><i class="fas fa-file-invoice-dollar"></i> Taxation</h2>
+                <div class="course-items">
+                    <div class="course-card">
+                        <div class="course-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Corporate Taxation</h3>
+                        <p>Corporate tax regulations, planning, and compliance.</p>
+                        <div class="course-tags">
+                            <span>Tax Planning</span>
+                            <span>Compliance</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </main>
 
-    <script src="../js/common.js"></script>
+    <script src="../js/navbar.js"></script>
     <script src="../js/pages/courses.js"></script>
 </body>
 </html>
