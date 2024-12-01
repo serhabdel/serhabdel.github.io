@@ -161,12 +161,15 @@ body {
     .menu-btn {
         display: block;
         z-index: 1100;
+        position: fixed;
+        top: 15px;
+        right: 15px;
     }
 
     .nav-right {
         position: fixed;
         top: 0;
-        right: -100%;
+        left: 0;
         height: 100vh;
         width: 100%;
         background: var(--bg-secondary);
@@ -176,12 +179,14 @@ body {
         align-items: center;
         transition: 0.5s ease-in-out;
         opacity: 0;
+        visibility: hidden;
         z-index: 1000;
+        padding: 0 5%;
     }
 
     .nav-right.open {
-        right: 0;
         opacity: 1;
+        visibility: visible;
     }
 
     .nav-links {
@@ -194,7 +199,7 @@ body {
     }
 
     .nav-links li {
-        margin: 1.5rem 0;
+        margin: 1rem 0;
         text-align: center;
         width: 100%;
     }
@@ -203,10 +208,37 @@ body {
         font-size: 1.2rem;
         display: block;
         padding: 0.5rem 0;
+        text-decoration: none;
+        color: var(--text-primary);
+        transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+        color: var(--accent-primary);
     }
 
     .language-switcher {
         margin: 2rem 0;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .lang-btn {
+        background: none;
+        border: 1px solid var(--text-primary);
+        color: var(--text-primary);
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .lang-btn:hover,
+    .lang-btn.active {
+        background: var(--accent-primary);
+        border-color: var(--accent-primary);
+        color: var(--bg-primary);
     }
 }
 
