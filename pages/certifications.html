@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certifications - Abdelhalim Serhani</title>
+    <title data-i18n="certifications.pageTitle">Certifications - Abdelhalim Serhani</title>
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/pages/certifications.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -14,15 +14,19 @@
     <nav class="navbar">
         <div class="nav-logo">Abdelhalim Serhani</div>
         <ul class="nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="academic.html">Academic</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="certifications.html" class="active">Certifications</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="academic.html" data-i18n="nav.academic">Academic</a></li>
+            <li><a href="experience.html" data-i18n="nav.experience">Experience</a></li>
+            <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="certifications.html" class="active" data-i18n="nav.certifications">Certifications</a></li>
+            <li><a href="courses.html" data-i18n="nav.courses">Courses</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
+        <div class="language-switcher">
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+        </div>
         <div class="hamburger">
             <span></span>
             <span></span>
@@ -32,66 +36,48 @@
 
     <!-- Certifications Section -->
     <section class="certifications">
-        <h2 class="section-title">Certifications</h2>
+        <h2 class="section-title" data-i18n="certifications.title">Certifications</h2>
         <div class="certification-grid">
             <!-- Google Data Analytics -->
             <div class="certification-item">
                 <div class="cert-header">
-                    <img src="https://images.credly.com/images/d41de2b7-cbc2-47ec-bcf1-ebecbe83872f/GCC_badge_DA_1000x1000.png" alt="Google Data Analytics" class="cert-logo">
+                    <img src="https://media.licdn.com/dms/image/C4D0BAQGfIzyer5Xig/company-logo_100_100/0/1630568513226?e=1714003200&v=beta&t=qGqaXEwVRG3Pz9VPx_nXLNbkBVVqKfRnqHKiSFSgqWU" alt="Google" class="cert-logo">
                     <div>
-                        <h3>Google Data Analytics</h3>
-                        <p class="cert-issuer">Coursera</p>
+                        <h3 data-i18n="certifications.googleAnalytics.title">Google Data Analytics Professional Certificate</h3>
+                        <p class="cert-issuer" data-i18n="certifications.googleAnalytics.issuer">Google</p>
                     </div>
                 </div>
                 <div class="cert-content">
-                    <p class="cert-description">
-                        Professional certification in data analytics covering critical thinking, data collection, cleaning, analysis, and visualization using SQL, Spreadsheets, Tableau, and Data Story Telling.
+                    <p class="cert-description" data-i18n="certifications.googleAnalytics.description">
+                        Comprehensive training in data analytics, covering essential skills in data collection, processing, analysis, and visualization.
                     </p>
-                    <div class="cert-meta">
-                        <div class="cert-skills">
-                            <span>Critical Thinking</span>
-                            <span>Data Collection</span>
-                            <span>Data Cleaning</span>
-                            <span>Tableau</span>
-                            <span>SQL</span>
-                            <span>Spreadsheets</span>
-                            <span>Data Story Telling</span>
-                        </div>
-                    </div>
                     <div class="cert-details">
                         <span class="cert-date">
                             <i class="far fa-calendar-alt"></i>
-                            Expected July 2024
+                            <span data-i18n="certifications.googleAnalytics.date">January 2024</span>
                         </span>
-                        <span class="cert-credential">
-                            <i class="fas fa-qrcode"></i>
-                            Includes QR Verification
-                        </span>
+                        <a href="https://www.coursera.org/account/accomplishments/professional-cert/EXAMPLE" target="_blank" class="cert-verify" data-i18n="certifications.verificationLink">Verify Certificate</a>
                     </div>
                 </div>
             </div>
 
-            <!-- UCD Certification -->
+            <!-- UCD Certificate -->
             <div class="certification-item">
                 <div class="cert-header">
                     <img src="https://media.licdn.com/dms/image/C4E0BAQF5t62bcL0e9g/company-logo_100_100/0/1631352996496?e=1714003200&v=beta&t=OeIJGkY-ZVNbMhPqX_f-9mHOYqvOXxnBvR0E4RYFeYQ" alt="UCD" class="cert-logo">
                     <div>
-                        <h3>Initiation aux Produits de Financement et de Placement des Banques Participatives au Maroc</h3>
-                        <p class="cert-issuer">UCD</p>
+                        <h3 data-i18n="certifications.ucd.title">Initiation aux Produits de Financement et de Placement des Banques Participatives au Maroc</h3>
+                        <p class="cert-issuer" data-i18n="certifications.ucd.issuer">UCD</p>
                     </div>
                 </div>
                 <div class="cert-content">
-                    <p class="cert-description">
+                    <p class="cert-description" data-i18n="certifications.ucd.description">
                         Comprehensive understanding of Islamic banking products and financial instruments in Morocco.
                     </p>
                     <div class="cert-details">
                         <span class="cert-date">
                             <i class="far fa-calendar-alt"></i>
-                            2023
-                        </span>
-                        <span class="cert-credential">
-                            <i class="fas fa-certificate"></i>
-                            Verified
+                            <span data-i18n="certifications.ucd.date">December 2023</span>
                         </span>
                     </div>
                 </div>
@@ -99,7 +85,9 @@
         </div>
     </section>
 
+    <script src="../js/translations.js"></script>
     <script src="../js/common.js"></script>
+    <script src="../js/language-switcher.js"></script>
     <script src="../js/pages/certifications.js"></script>
 </body>
 </html>

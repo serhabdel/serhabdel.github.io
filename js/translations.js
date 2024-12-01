@@ -261,46 +261,211 @@ const translations = {
             }
         },
         certifications: {
-            title: "Professional Certifications",
-            subtitle: "Validating Expertise Through Recognized Certifications",
-            microsoftTitle: "Microsoft Office Specialist",
-            microsoftDate: "2023",
-            microsoftDescription: "Advanced Excel and PowerPoint certification",
-            sageTitle: "Sage 100 Certification",
-            sageDate: "2023",
-            sageDescription: "Professional certification in Sage accounting software",
-            viewCertificate: "View Certificate",
-            downloadCertificate: "Download Certificate"
+            pageTitle: "Certifications - Abdelhalim Serhani",
+            title: "Certifications",
+            googleAnalytics: {
+                title: "Google Data Analytics",
+                issuer: "Coursera",
+                description: "Professional certification in data analytics covering critical thinking, data collection, cleaning, analysis, and visualization using SQL, Spreadsheets, Tableau, and Data Story Telling.",
+                skills: {
+                    criticalThinking: "Critical Thinking",
+                    dataCollection: "Data Collection",
+                    dataCleaning: "Data Cleaning",
+                    tableau: "Tableau",
+                    sql: "SQL",
+                    spreadsheets: "Spreadsheets",
+                    storytelling: "Data Story Telling"
+                },
+                meta: {
+                    date: "Expected July 2024",
+                    verification: "Includes QR Verification"
+                }
+            },
+            ucd: {
+                title: "Initiation aux Produits de Financement et de Placement des Banques Participatives au Maroc",
+                issuer: "UCD",
+                description: "Comprehensive understanding of Islamic banking products and financial instruments in Morocco.",
+                meta: {
+                    date: "2023",
+                    verification: "Verified"
+                }
+            }
         },
         courses: {
-            title: "Professional Development",
-            subtitle: "Continuous Learning & Skill Enhancement",
-            onlineCourses: "Online Courses",
-            inPersonTraining: "In-Person Training",
-            courseStatus: {
-                completed: "Completed",
-                ongoing: "Ongoing",
-                planned: "Planned"
+            pageTitle: "Courses - Abdelhalim Serhani",
+            title: "Academic Courses",
+            subtitle: "Associated with Université Chouaib Doukkali El Jadida",
+            categories: {
+                management: {
+                    title: "Management Control",
+                    courses: {
+                        management: {
+                            title: "Management Accounting",
+                            description: "Advanced management accounting principles and cost control systems",
+                            tags: {
+                                costAnalysis: "Cost Analysis",
+                                performanceMetrics: "Performance Metrics"
+                            }
+                        },
+                        control: {
+                            title: "Management Control",
+                            description: "Strategic control systems and performance measurement frameworks",
+                            tags: {
+                                kpis: "KPIs",
+                                controlSystems: "Control Systems"
+                            }
+                        }
+                    }
+                },
+                strategic: {
+                    title: "Strategic Management",
+                    courses: {
+                        strategic: {
+                            title: "Strategic Management",
+                            description: "Corporate strategy development and implementation processes",
+                            tags: {
+                                strategy: "Strategy",
+                                planning: "Planning"
+                            }
+                        },
+                        marketing: {
+                            title: "Strategic Marketing",
+                            description: "Marketing strategy and brand management principles",
+                            tags: {
+                                marketingStrategy: "Marketing Strategy",
+                                brandManagement: "Brand Management"
+                            }
+                        }
+                    }
+                },
+                operations: {
+                    title: "Operations Management",
+                    courses: {
+                        supply: {
+                            title: "Supply Chain Management",
+                            description: "Supply chain optimization and logistics management",
+                            tags: {
+                                logistics: "Logistics",
+                                operations: "Operations"
+                            }
+                        },
+                        operational: {
+                            title: "Operational Marketing",
+                            description: "Implementation of marketing strategies and operational tactics",
+                            tags: {
+                                marketingOps: "Marketing Ops",
+                                implementation: "Implementation"
+                            }
+                        }
+                    }
+                },
+                economics: {
+                    title: "Economics & Statistics",
+                    courses: {
+                        micro: {
+                            title: "Microeconomics",
+                            description: "Economic decision-making at individual and firm level",
+                            tags: {
+                                economicTheory: "Economic Theory",
+                                marketAnalysis: "Market Analysis"
+                            }
+                        },
+                        stats: {
+                            title: "Statistics and Probabilities",
+                            description: "Statistical analysis and probability theory applications",
+                            tags: {
+                                dataAnalysis: "Data Analysis",
+                                statisticalMethods: "Statistical Methods"
+                            }
+                        },
+                        sampling: {
+                            title: "Sampling and Estimating",
+                            description: "Statistical sampling techniques and estimation methods",
+                            tags: {
+                                samplingMethods: "Sampling Methods",
+                                statisticalInference: "Statistical Inference"
+                            }
+                        }
+                    }
+                },
+                finance: {
+                    title: "Finance",
+                    courses: {
+                        analysis: {
+                            title: "Financial Analysis",
+                            description: "Advanced techniques in financial statement analysis and valuation",
+                            tags: {
+                                financialRatios: "Financial Ratios",
+                                valuation: "Valuation"
+                            }
+                        },
+                        markets: {
+                            title: "Capital Markets",
+                            description: "Understanding financial markets and investment instruments",
+                            tags: {
+                                markets: "Markets",
+                                investments: "Investments"
+                            }
+                        },
+                        budgeting: {
+                            title: "Budgeting and Cash Management",
+                            description: "Cash flow management and budgeting techniques",
+                            tags: {
+                                cashFlow: "Cash Flow",
+                                budgeting: "Budgeting"
+                            }
+                        }
+                    }
+                },
+                taxation: {
+                    title: "Taxation",
+                    courses: {
+                        corporate: {
+                            title: "Corporate Taxation",
+                            description: "Corporate tax regulations, planning, and compliance",
+                            tags: {
+                                taxPlanning: "Tax Planning",
+                                compliance: "Compliance"
+                            }
+                        }
+                    }
+                }
             }
         },
         contact: {
-            title: "Contact Me",
-            subtitle: "Let's Connect",
-            form: {
-                email: "Your Email",
-                message: "Your Message",
-                send: "Send Message",
-                success: "Message sent successfully!",
-                error: "Error sending message. Please try again."
-            },
+            pageTitle: "Contact - Abdelhalim Serhani",
+            title: "Get in Touch",
             info: {
-                email: "Email",
-                phone: "Phone",
-                location: "Location",
-                linkedin: "LinkedIn Profile"
+                title: "Contact Information",
+                subtitle: "Feel free to reach out to me through any of these channels:",
+                email: {
+                    title: "Email",
+                    value: "Serhani.Abdelhalim@Outlook.com"
+                },
+                phone: {
+                    title: "Phone",
+                    value: "+212 643 597 336"
+                },
+                linkedin: {
+                    title: "LinkedIn",
+                    value: "Connect with me on LinkedIn"
+                }
+            },
+            form: {
+                title: "Send me a Message",
+                email: {
+                    label: "Email",
+                    placeholder: "Your email address"
+                },
+                message: {
+                    label: "Message",
+                    placeholder: "Your message"
+                },
+                submit: "Send Message"
             }
         },
         projects: {
+            pageTitle: "Projects - Abdelhalim Serhani",
             title: "Projects Portfolio",
             categories: {
                 all: "All Projects",
@@ -308,6 +473,107 @@ const translations = {
                 personal: "Personal",
                 dashboard: "Dashboards",
                 vba: "VBA Excel"
+            },
+            vba: {
+                costManagement: {
+                    title: "Cost Management System",
+                    description: "Advanced Excel VBA-based cost management system with automated reporting, data visualization, and interactive dashboards.",
+                    slides: {
+                        mainDashboard: "Main Dashboard Interface",
+                        dataEntry: "Custom Data Entry Form",
+                        costAnalysis: "Cost Analysis Module",
+                        reportGen: "Automated Report Generation",
+                        dataViz: "Interactive Data Visualization",
+                        settings: "System Configuration Panel",
+                        metrics: "Performance Metrics Dashboard",
+                        export: "Export and Sharing Options"
+                    },
+                    tags: {
+                        vba: "VBA",
+                        excel: "Excel",
+                        cost: "Cost Management",
+                        automation: "Automation"
+                    }
+                },
+                financialAnalysis: {
+                    title: "Financial Analysis Tool",
+                    description: "Comprehensive financial analysis tool with automated reporting, interactive dashboards, and advanced data visualization capabilities.",
+                    slides: {
+                        dashboard: "Financial Analysis Dashboard",
+                        metrics: "Performance Metrics Overview",
+                        analysis: "Advanced Data Analysis Module",
+                        reports: "Automated Report Generation",
+                        settings: "System Configuration Interface",
+                        visualization: "Interactive Data Visualization"
+                    },
+                    tags: {
+                        vba: "VBA",
+                        excel: "Excel",
+                        finance: "Financial Analysis",
+                        visualization: "Data Visualization"
+                    }
+                }
+            },
+            dashboard: {
+                countries: {
+                    title: "Countries Comparison Dashboard",
+                    description: "Comprehensive data visualization dashboard comparing economic and social indicators across multiple countries. Leveraged advanced data analysis techniques to present complex global economic data in an intuitive, interactive format.",
+                    slides: {
+                        gdp: "GDP Comparative Analysis"
+                    },
+                    tags: {
+                        dashboard: "Dashboard",
+                        gdp: "GDP",
+                        poverty: "Poverty Rate",
+                        visualization: "Data Visualization",
+                        economic: "Economic Analysis"
+                    }
+                }
+            },
+            personal: {
+                portfolio: {
+                    title: "Portfolio Website",
+                    description: "Personal portfolio website showcasing my professional experience, skills, and projects. Built with modern web technologies and best practices.",
+                    tags: {
+                        html: "HTML",
+                        css: "CSS",
+                        js: "JavaScript",
+                        responsive: "Responsive Design"
+                    }
+                }
+            },
+            academic: {
+                productionCost: {
+                    title: "Production Cost Calculator",
+                    description: "Excel VBA application developed for JFC V S.A to manage and analyze production costs. Features include user access management, production cost tracking, and automated trend analysis dashboard.",
+                    tags: {
+                        vba: "VBA Excel",
+                        dataAnalysis: "Data Analysis",
+                        dashboardDesign: "Dashboard Design",
+                        costManagement: "Cost Management",
+                        userManagement: "User Management"
+                    }
+                },
+                medVent: {
+                    title: "MedVent",
+                    description: "Event management and communication agency project at Université Chouaib Doukkali El Jadida. Led a team of 11 members to develop a solution for streamlining event organization and project marketing services, focusing on time and cost efficiency.",
+                    tags: {
+                        eventManagement: "Event Management",
+                        teamLeadership: "Team Leadership",
+                        projectPlanning: "Project Planning",
+                        marketing: "Marketing"
+                    }
+                },
+                moFida: {
+                    title: "MoFida",
+                    description: "Developed a natural jam product using citrus fruit with organic ingredients, creating a comprehensive marketing plan. Collaborated with a team of 6 members at Université Chouaib Doukkali El Jadida to establish product positioning and go-to-market strategy.",
+                    tags: {
+                        productDevelopment: "Product Development",
+                        marketingStrategy: "Marketing Strategy",
+                        marketResearch: "Market Research",
+                        teamCollaboration: "Team Collaboration"
+                    }
+                }
             }
         },
         experience: {
@@ -616,46 +882,211 @@ const translations = {
             }
         },
         certifications: {
-            title: "Certifications Professionnelles",
-            subtitle: "Validation de l'Expertise par des Certifications Reconnues",
-            microsoftTitle: "Microsoft Office Specialist",
-            microsoftDate: "2023",
-            microsoftDescription: "Certification avancée Excel et PowerPoint",
-            sageTitle: "Certification Sage 100",
-            sageDate: "2023",
-            sageDescription: "Certification professionnelle du logiciel comptable Sage",
-            viewCertificate: "Voir le Certificat",
-            downloadCertificate: "Télécharger le Certificat"
+            pageTitle: "Certifications - Abdelhalim Serhani",
+            title: "Certifications",
+            googleAnalytics: {
+                title: "Google Data Analytics",
+                issuer: "Coursera",
+                description: "Certification professionnelle en analyse de données couvrant la pensée critique, la collecte de données, le nettoyage, l'analyse et la visualisation utilisant SQL, les tableurs, Tableau et la narration de données.",
+                skills: {
+                    criticalThinking: "Pensée Critique",
+                    dataCollection: "Collecte de Données",
+                    dataCleaning: "Nettoyage de Données",
+                    tableau: "Tableau",
+                    sql: "SQL",
+                    spreadsheets: "Tableurs",
+                    storytelling: "Narration de Données"
+                },
+                meta: {
+                    date: "Prévu pour juillet 2024",
+                    verification: "Inclut la vérification QR"
+                }
+            },
+            ucd: {
+                title: "Initiation aux Produits de Financement et de Placement des Banques Participatives au Maroc",
+                issuer: "UCD",
+                description: "Compréhension approfondie des produits bancaires islamiques et des instruments financiers au Maroc.",
+                meta: {
+                    date: "2023",
+                    verification: "Vérifié"
+                }
+            }
         },
         courses: {
-            title: "Développement Professionnel",
-            subtitle: "Formation Continue & Perfectionnement",
-            onlineCourses: "Cours en Ligne",
-            inPersonTraining: "Formation en Présentiel",
-            courseStatus: {
-                completed: "Terminé",
-                ongoing: "En Cours",
-                planned: "Planifié"
+            pageTitle: "Cours - Abdelhalim Serhani",
+            title: "Cours Académiques",
+            subtitle: "Associé à l'Université Chouaib Doukkali El Jadida",
+            categories: {
+                management: {
+                    title: "Contrôle de Gestion",
+                    courses: {
+                        management: {
+                            title: "Comptabilité de Gestion",
+                            description: "Principes avancés de comptabilité de gestion et systèmes de contrôle des coûts",
+                            tags: {
+                                costAnalysis: "Analyse des Coûts",
+                                performanceMetrics: "Indicateurs de Performance"
+                            }
+                        },
+                        control: {
+                            title: "Contrôle de Gestion",
+                            description: "Systèmes de contrôle stratégique et cadres de mesure de la performance",
+                            tags: {
+                                kpis: "KPIs",
+                                controlSystems: "Systèmes de Contrôle"
+                            }
+                        }
+                    }
+                },
+                strategic: {
+                    title: "Management Stratégique",
+                    courses: {
+                        strategic: {
+                            title: "Management Stratégique",
+                            description: "Développement et mise en œuvre de la stratégie d'entreprise",
+                            tags: {
+                                strategy: "Stratégie",
+                                planning: "Planification"
+                            }
+                        },
+                        marketing: {
+                            title: "Marketing Stratégique",
+                            description: "Stratégie marketing et principes de gestion de marque",
+                            tags: {
+                                marketingStrategy: "Stratégie Marketing",
+                                brandManagement: "Gestion de Marque"
+                            }
+                        }
+                    }
+                },
+                operations: {
+                    title: "Gestion des Opérations",
+                    courses: {
+                        supply: {
+                            title: "Gestion de la Chaîne Logistique",
+                            description: "Optimisation de la chaîne logistique et gestion logistique",
+                            tags: {
+                                logistics: "Logistique",
+                                operations: "Opérations"
+                            }
+                        },
+                        operational: {
+                            title: "Marketing Opérationnel",
+                            description: "Mise en œuvre des stratégies marketing et tactiques opérationnelles",
+                            tags: {
+                                marketingOps: "Ops Marketing",
+                                implementation: "Mise en œuvre"
+                            }
+                        }
+                    }
+                },
+                economics: {
+                    title: "Économie et Statistiques",
+                    courses: {
+                        micro: {
+                            title: "Microéconomie",
+                            description: "Prise de décision économique au niveau individuel et de l'entreprise",
+                            tags: {
+                                economicTheory: "Théorie Économique",
+                                marketAnalysis: "Analyse de Marché"
+                            }
+                        },
+                        stats: {
+                            title: "Statistiques et Probabilités",
+                            description: "Analyse statistique et applications de la théorie des probabilités",
+                            tags: {
+                                dataAnalysis: "Analyse de Données",
+                                statisticalMethods: "Méthodes Statistiques"
+                            }
+                        },
+                        sampling: {
+                            title: "Échantillonnage et Estimation",
+                            description: "Techniques d'échantillonnage statistique et méthodes d'estimation",
+                            tags: {
+                                samplingMethods: "Méthodes d'Échantillonnage",
+                                statisticalInference: "Inférence Statistique"
+                            }
+                        }
+                    }
+                },
+                finance: {
+                    title: "Finance",
+                    courses: {
+                        analysis: {
+                            title: "Analyse Financière",
+                            description: "Techniques avancées d'analyse des états financiers et d'évaluation",
+                            tags: {
+                                financialRatios: "Ratios Financiers",
+                                valuation: "Évaluation"
+                            }
+                        },
+                        markets: {
+                            title: "Marchés des Capitaux",
+                            description: "Compréhension des marchés financiers et des instruments d'investissement",
+                            tags: {
+                                markets: "Marchés",
+                                investments: "Investissements"
+                            }
+                        },
+                        budgeting: {
+                            title: "Budgétisation et Gestion de Trésorerie",
+                            description: "Gestion des flux de trésorerie et techniques budgétaires",
+                            tags: {
+                                cashFlow: "Flux de Trésorerie",
+                                budgeting: "Budgétisation"
+                            }
+                        }
+                    }
+                },
+                taxation: {
+                    title: "Fiscalité",
+                    courses: {
+                        corporate: {
+                            title: "Fiscalité des Entreprises",
+                            description: "Réglementation fiscale des entreprises, planification et conformité",
+                            tags: {
+                                taxPlanning: "Planification Fiscale",
+                                compliance: "Conformité"
+                            }
+                        }
+                    }
+                }
             }
         },
         contact: {
-            title: "Me Contacter",
-            subtitle: "Restons en Contact",
-            form: {
-                email: "Votre Email",
-                message: "Votre Message",
-                send: "Envoyer le Message",
-                success: "Message envoyé avec succès !",
-                error: "Erreur lors de l'envoi du message. Veuillez réessayer."
-            },
+            pageTitle: "Contact - Abdelhalim Serhani",
+            title: "Contactez-moi",
             info: {
-                email: "Email",
-                phone: "Téléphone",
-                location: "Localisation",
-                linkedin: "Profil LinkedIn"
+                title: "Informations de Contact",
+                subtitle: "N'hésitez pas à me contacter via l'un de ces canaux :",
+                email: {
+                    title: "Email",
+                    value: "Serhani.Abdelhalim@Outlook.com"
+                },
+                phone: {
+                    title: "Téléphone",
+                    value: "+212 643 597 336"
+                },
+                linkedin: {
+                    title: "LinkedIn",
+                    value: "Connectez-vous avec moi sur LinkedIn"
+                }
+            },
+            form: {
+                title: "Envoyez-moi un Message",
+                email: {
+                    label: "Email",
+                    placeholder: "Votre adresse email"
+                },
+                message: {
+                    label: "Message",
+                    placeholder: "Votre message"
+                },
+                submit: "Envoyer le Message"
             }
         },
         projects: {
+            pageTitle: "Projets - Abdelhalim Serhani",
             title: "Portfolio de Projets",
             categories: {
                 all: "Tous les Projets",
@@ -663,6 +1094,107 @@ const translations = {
                 personal: "Personnels",
                 dashboard: "Tableaux de Bord",
                 vba: "VBA Excel"
+            },
+            vba: {
+                costManagement: {
+                    title: "Système de Gestion des Coûts",
+                    description: "Système avancé de gestion des coûts basé sur Excel VBA avec reporting automatisé, visualisation des données et tableaux de bord interactifs.",
+                    slides: {
+                        mainDashboard: "Interface du Tableau de Bord Principal",
+                        dataEntry: "Formulaire Personnalisé de Saisie",
+                        costAnalysis: "Module d'Analyse des Coûts",
+                        reportGen: "Génération Automatique de Rapports",
+                        dataViz: "Visualisation Interactive des Données",
+                        settings: "Panneau de Configuration du Système",
+                        metrics: "Tableau de Bord des Indicateurs de Performance",
+                        export: "Options d'Exportation et de Partage"
+                    },
+                    tags: {
+                        vba: "VBA",
+                        excel: "Excel",
+                        cost: "Gestion des Coûts",
+                        automation: "Automatisation"
+                    }
+                },
+                financialAnalysis: {
+                    title: "Outil d'Analyse Financière",
+                    description: "Outil complet d'analyse financière avec reporting automatisé, tableaux de bord interactifs et capacités avancées de visualisation des données.",
+                    slides: {
+                        dashboard: "Tableau de Bord d'Analyse Financière",
+                        metrics: "Aperçu des Indicateurs de Performance",
+                        analysis: "Module d'Analyse Avancée des Données",
+                        reports: "Génération Automatique de Rapports",
+                        settings: "Interface de Configuration du Système",
+                        visualization: "Visualisation Interactive des Données"
+                    },
+                    tags: {
+                        vba: "VBA",
+                        excel: "Excel",
+                        finance: "Analyse Financière",
+                        visualization: "Visualisation des Données"
+                    }
+                }
+            },
+            dashboard: {
+                countries: {
+                    title: "Tableau de Bord de Comparaison des Pays",
+                    description: "Tableau de bord complet de visualisation des données comparant les indicateurs économiques et sociaux entre plusieurs pays. Utilisation de techniques avancées d'analyse des données pour présenter des données économiques mondiales complexes dans un format intuitif et interactif.",
+                    slides: {
+                        gdp: "Analyse Comparative du PIB"
+                    },
+                    tags: {
+                        dashboard: "Tableau de Bord",
+                        gdp: "PIB",
+                        poverty: "Taux de Pauvreté",
+                        visualization: "Visualisation des Données",
+                        economic: "Analyse Économique"
+                    }
+                }
+            },
+            personal: {
+                portfolio: {
+                    title: "Site Portfolio",
+                    description: "Site portfolio personnel présentant mon expérience professionnelle, mes compétences et mes projets. Construit avec des technologies web modernes et les meilleures pratiques.",
+                    tags: {
+                        html: "HTML",
+                        css: "CSS",
+                        js: "JavaScript",
+                        responsive: "Design Responsive"
+                    }
+                }
+            },
+            academic: {
+                productionCost: {
+                    title: "Calculateur de Coûts de Production",
+                    description: "Application Excel VBA développée pour JFC V S.A pour gérer et analyser les coûts de production. Fonctionnalités incluant la gestion des accès utilisateurs, le suivi des coûts de production et un tableau de bord d'analyse des tendances automatisé.",
+                    tags: {
+                        vba: "VBA Excel",
+                        dataAnalysis: "Analyse de Données",
+                        dashboardDesign: "Conception de Tableaux de Bord",
+                        costManagement: "Gestion des Coûts",
+                        userManagement: "Gestion des Utilisateurs"
+                    }
+                },
+                medVent: {
+                    title: "MedVent",
+                    description: "Projet d'agence de gestion d'événements et de communication à l'Université Chouaib Doukkali El Jadida. Direction d'une équipe de 11 membres pour développer une solution optimisant l'organisation d'événements et les services de marketing de projets, en mettant l'accent sur l'efficacité temporelle et financière.",
+                    tags: {
+                        eventManagement: "Gestion d'Événements",
+                        teamLeadership: "Leadership d'Équipe",
+                        projectPlanning: "Planification de Projets",
+                        marketing: "Marketing"
+                    }
+                },
+                moFida: {
+                    title: "MoFida",
+                    description: "Développement d'un produit de confiture naturelle à base d'agrumes avec des ingrédients biologiques, création d'un plan marketing complet. Collaboration avec une équipe de 6 membres à l'Université Chouaib Doukkali El Jadida pour établir le positionnement du produit et la stratégie de mise sur le marché.",
+                    tags: {
+                        productDevelopment: "Développement de Produit",
+                        marketingStrategy: "Stratégie Marketing",
+                        marketResearch: "Étude de Marché",
+                        teamCollaboration: "Collaboration d'Équipe"
+                    }
+                }
             }
         },
         experience: {
@@ -679,7 +1211,7 @@ const translations = {
                     ],
                     highlights: {
                         financial: "Analyse Financière",
-                        system: "Développement du Système"
+                        system: "Développement Système"
                     }
                 },
                 controller: {
@@ -698,7 +1230,7 @@ const translations = {
                         "Développement d'un système de contrôle de gestion pour le calcul des coûts de production de deux produits fertilisants",
                         "Détermination des centres de coûts pour identifier les coûts directs et indirects",
                         "Calcul du prix de revient des produits finis",
-                        "Développement d'une application Excel avec VBA pour le calcul des coûts de production journaliers"
+                        "Développement d'une application Excel avec VBA pour le calcul des coûts de production quotidiens"
                     ],
                     highlights: {
                         cost: "Analyse des Coûts",

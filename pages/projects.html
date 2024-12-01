@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Abdelhalim Serhani</title>
+    <title data-i18n="projects.pageTitle">Projects - Abdelhalim Serhani</title>
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/pages/projects.css">
     <link rel="stylesheet" href="../styles/components/carousel.css">
@@ -15,14 +15,14 @@
     <nav class="navbar">
         <div class="nav-logo">Abdelhalim Serhani</div>
         <ul class="nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="academic.html">Academic</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html" class="active">Projects</a></li>
-            <li><a href="certifications.html">Certifications</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="academic.html" data-i18n="nav.academic">Academic</a></li>
+            <li><a href="experience.html" data-i18n="nav.experience">Experience</a></li>
+            <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="projects.html" class="active" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="certifications.html" data-i18n="nav.certifications">Certifications</a></li>
+            <li><a href="courses.html" data-i18n="nav.courses">Courses</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
         <div class="menu-btn">
             <div class="menu-btn__burger"></div>
@@ -30,52 +30,52 @@
     </nav>
 
     <main class="projects-container">
-        <h1 class="section-title">Projects Portfolio</h1>
+        <h1 class="section-title" data-i18n="projects.title">Projects Portfolio</h1>
         <div class="project-categories">
-            <button class="category-btn active" data-category="all">All Projects</button>
-            <button class="category-btn" data-category="academic">Academic</button>
-            <button class="category-btn" data-category="personal">Personal</button>
-            <button class="category-btn" data-category="dashboard">Dashboards</button>
-            <button class="category-btn" data-category="vba">VBA Excel</button>
+            <button class="category-btn active" data-category="all" data-i18n="projects.categories.all">All Projects</button>
+            <button class="category-btn" data-category="academic" data-i18n="projects.categories.academic">Academic</button>
+            <button class="category-btn" data-category="personal" data-i18n="projects.categories.personal">Personal</button>
+            <button class="category-btn" data-category="dashboard" data-i18n="projects.categories.dashboard">Dashboards</button>
+            <button class="category-btn" data-category="vba" data-i18n="projects.categories.vba">VBA Excel</button>
         </div>
 
         <div class="projects-grid">
             <!-- VBA Projects -->
             <div class="project-card" data-category="vba">
-                <h3>Cost Management System</h3>
+                <h3 data-i18n="projects.vba.costManagement.title">Cost Management System</h3>
                 <div class="carousel">
                     <div class="carousel-container">
                         <div class="carousel-slide">
                             <img src="../assets/projects/vba/project1/image1.png" alt="Main Dashboard">
-                            <div class="carousel-caption">Main Dashboard Interface</div>
+                            <div class="carousel-caption" data-i18n="projects.vba.costManagement.slides.mainDashboard">Main Dashboard Interface</div>
                         </div>
                         <div class="carousel-slide">
                             <img src="../assets/projects/vba/project1/image2.png" alt="Data Entry Form">
-                            <div class="carousel-caption">Custom Data Entry Form</div>
+                            <div class="carousel-caption" data-i18n="projects.vba.costManagement.slides.dataEntry">Custom Data Entry Form</div>
                         </div>
                         <div class="carousel-slide">
                             <img src="../assets/projects/vba/project1/image3.png" alt="Cost Analysis">
-                            <div class="carousel-caption">Cost Analysis Module</div>
+                            <div class="carousel-caption" data-i18n="projects.vba.costManagement.slides.costAnalysis">Cost Analysis Module</div>
                         </div>
                         <div class="carousel-slide">
                             <img src="../assets/projects/vba/project1/image4.png" alt="Report Generation">
-                            <div class="carousel-caption">Automated Report Generation</div>
+                            <div class="carousel-caption" data-i18n="projects.vba.costManagement.slides.reportGen">Automated Report Generation</div>
                         </div>
                         <div class="carousel-slide">
                             <img src="../assets/projects/vba/project1/image5.png" alt="Data Visualization">
-                            <div class="carousel-caption">Interactive Data Visualization</div>
+                            <div class="carousel-caption" data-i18n="projects.vba.costManagement.slides.dataViz">Interactive Data Visualization</div>
                         </div>
                         <div class="carousel-slide">
                             <img src="../assets/projects/vba/project1/image6.png" alt="Settings Panel">
-                            <div class="carousel-caption">System Configuration Panel</div>
+                            <div class="carousel-caption" data-i18n="projects.vba.costManagement.slides.settings">System Configuration Panel</div>
                         </div>
                         <div class="carousel-slide">
                             <img src="../assets/projects/vba/project1/image7.png" alt="Performance Metrics">
-                            <div class="carousel-caption">Performance Metrics Dashboard</div>
+                            <div class="carousel-caption" data-i18n="projects.vba.costManagement.slides.metrics">Performance Metrics Dashboard</div>
                         </div>
                         <div class="carousel-slide">
                             <img src="../assets/projects/vba/project1/image8.png" alt="Export Options">
-                            <div class="carousel-caption">Export and Sharing Options</div>
+                            <div class="carousel-caption" data-i18n="projects.vba.costManagement.slides.export">Export and Sharing Options</div>
                         </div>
                     </div>
                     <div class="carousel-nav">
@@ -85,43 +85,43 @@
                     <div class="carousel-dots"></div>
                 </div>
                 <div class="project-info">
-                    <p>Advanced Excel VBA-based cost management system with automated reporting, data visualization, and interactive dashboards.</p>
+                    <p data-i18n="projects.vba.costManagement.description">Advanced Excel VBA-based cost management system with automated reporting, data visualization, and interactive dashboards.</p>
                     <div class="project-tags">
-                        <span>VBA</span>
-                        <span>Excel</span>
-                        <span>Cost Management</span>
-                        <span>Automation</span>
+                        <span data-i18n="projects.vba.costManagement.tags.vba">VBA</span>
+                        <span data-i18n="projects.vba.costManagement.tags.excel">Excel</span>
+                        <span data-i18n="projects.vba.costManagement.tags.cost">Cost Management</span>
+                        <span data-i18n="projects.vba.costManagement.tags.automation">Automation</span>
                     </div>
                 </div>
             </div>
 
             <div class="project-card" data-category="vba">
-                <h3>Financial Analysis Tool</h3>
+                <h3 data-i18n="projects.vba.financialAnalysis.title">Financial Analysis Tool</h3>
                 <div class="carousel">
                     <div class="carousel-container">
                         <div class="carousel-slide">
                             <img src="../assets/projects/vba/project2/image1.png" alt="Financial Dashboard">
-                            <div class="carousel-caption">Financial Analysis Dashboard</div>
+                            <div class="carousel-caption" data-i18n="projects.vba.financialAnalysis.slides.dashboard">Financial Analysis Dashboard</div>
                         </div>
                         <div class="carousel-slide">
                             <img src="../assets/projects/vba/project2/image2.png" alt="Performance Metrics">
-                            <div class="carousel-caption">Performance Metrics Overview</div>
+                            <div class="carousel-caption" data-i18n="projects.vba.financialAnalysis.slides.metrics">Performance Metrics Overview</div>
                         </div>
                         <div class="carousel-slide">
                             <img src="../assets/projects/vba/project2/image3.png" alt="Data Analysis">
-                            <div class="carousel-caption">Advanced Data Analysis Module</div>
+                            <div class="carousel-caption" data-i18n="projects.vba.financialAnalysis.slides.analysis">Advanced Data Analysis Module</div>
                         </div>
                         <div class="carousel-slide">
                             <img src="../assets/projects/vba/project2/image4.png" alt="Report Generation">
-                            <div class="carousel-caption">Automated Report Generation</div>
+                            <div class="carousel-caption" data-i18n="projects.vba.financialAnalysis.slides.reports">Automated Report Generation</div>
                         </div>
                         <div class="carousel-slide">
                             <img src="../assets/projects/vba/project2/image5.png" alt="Settings Interface">
-                            <div class="carousel-caption">System Configuration Interface</div>
+                            <div class="carousel-caption" data-i18n="projects.vba.financialAnalysis.slides.settings">System Configuration Interface</div>
                         </div>
                         <div class="carousel-slide">
                             <img src="../assets/projects/vba/project2/image6.png" alt="Data Visualization">
-                            <div class="carousel-caption">Interactive Data Visualization</div>
+                            <div class="carousel-caption" data-i18n="projects.vba.financialAnalysis.slides.visualization">Interactive Data Visualization</div>
                         </div>
                     </div>
                     <div class="carousel-nav">
@@ -131,24 +131,24 @@
                     <div class="carousel-dots"></div>
                 </div>
                 <div class="project-info">
-                    <p>Comprehensive financial analysis tool with automated reporting, interactive dashboards, and advanced data visualization capabilities.</p>
+                    <p data-i18n="projects.vba.financialAnalysis.description">Comprehensive financial analysis tool with automated reporting, interactive dashboards, and advanced data visualization capabilities.</p>
                     <div class="project-tags">
-                        <span>VBA</span>
-                        <span>Excel</span>
-                        <span>Financial Analysis</span>
-                        <span>Data Visualization</span>
+                        <span data-i18n="projects.vba.financialAnalysis.tags.vba">VBA</span>
+                        <span data-i18n="projects.vba.financialAnalysis.tags.excel">Excel</span>
+                        <span data-i18n="projects.vba.financialAnalysis.tags.finance">Financial Analysis</span>
+                        <span data-i18n="projects.vba.financialAnalysis.tags.visualization">Data Visualization</span>
                     </div>
                 </div>
             </div>
 
             <!-- Dashboard Projects -->
             <div class="project-card" data-category="dashboard">
-                <h3>Countries Comparison Dashboard</h3>
+                <h3 data-i18n="projects.dashboard.countries.title">Countries Comparison Dashboard</h3>
                 <div class="carousel">
                     <div class="carousel-container">
                         <div class="carousel-slide">
                             <img src="../assets/projects/dashboard/project1/image1.png" alt="GDP Comparison">
-                            <div class="carousel-caption">GDP Comparative Analysis</div>
+                            <div class="carousel-caption" data-i18n="projects.dashboard.countries.slides.gdp">GDP Comparative Analysis</div>
                         </div>
                     </div>
                     <div class="carousel-nav">
@@ -158,80 +158,81 @@
                     <div class="carousel-dots"></div>
                 </div>
                 <div class="project-info">
-                    <p>Comprehensive data visualization dashboard comparing economic and social indicators across multiple countries. Leveraged advanced data analysis techniques to present complex global economic data in an intuitive, interactive format.</p>
+                    <p data-i18n="projects.dashboard.countries.description">Comprehensive data visualization dashboard comparing economic and social indicators across multiple countries. Leveraged advanced data analysis techniques to present complex global economic data in an intuitive, interactive format.</p>
                     <div class="project-tags">
-                        <span>Dashboard</span>
-                        <span>GDP</span>
-                        <span>Poverty Rate</span>
-                        <span>Data Visualization</span>
-                        <span>Economic Analysis</span>
+                        <span data-i18n="projects.dashboard.countries.tags.dashboard">Dashboard</span>
+                        <span data-i18n="projects.dashboard.countries.tags.gdp">GDP</span>
+                        <span data-i18n="projects.dashboard.countries.tags.poverty">Poverty Rate</span>
+                        <span data-i18n="projects.dashboard.countries.tags.visualization">Data Visualization</span>
+                        <span data-i18n="projects.dashboard.countries.tags.economic">Economic Analysis</span>
                     </div>
                 </div>
             </div>
 
             <!-- Personal Projects -->
             <div class="project-card" data-category="personal">
-                <h3>Portfolio Website</h3>
+                <h3 data-i18n="projects.personal.portfolio.title">Portfolio Website</h3>
                 <img src="../assets/projects/personal/portfolio.jpg" alt="Portfolio Website">
                 <div class="project-info">
-                    <p>Personal portfolio website built with modern web technologies.</p>
+                    <p data-i18n="projects.personal.portfolio.description">Personal portfolio website showcasing my professional experience, skills, and projects. Built with modern web technologies and best practices.</p>
                     <div class="project-tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+                        <span data-i18n="projects.personal.portfolio.tags.html">HTML</span>
+                        <span data-i18n="projects.personal.portfolio.tags.css">CSS</span>
+                        <span data-i18n="projects.personal.portfolio.tags.js">JavaScript</span>
+                        <span data-i18n="projects.personal.portfolio.tags.responsive">Responsive Design</span>
                     </div>
                 </div>
             </div>
 
             <!-- Academic Projects -->
             <div class="project-card" data-category="academic">
-                <h3>Production Cost Calculator</h3>
+                <h3 data-i18n="projects.academic.productionCost.title">Production Cost Calculator</h3>
                 <div class="project-info">
-                    <p>Excel VBA application developed for JFC V S.A to manage and analyze production costs. Features include user access management, production cost tracking, and automated trend analysis dashboard.</p>
+                    <p data-i18n="projects.academic.productionCost.description">Excel VBA application developed for JFC V S.A to manage and analyze production costs. Features include user access management, production cost tracking, and automated trend analysis dashboard.</p>
                     <div class="project-meta">
                         <div class="project-duration"><i class="far fa-calendar-alt"></i> Apr 2023 - Aug 2023</div>
                         <div class="organization"><i class="far fa-building"></i> OCF Group</div>
                     </div>
                     <div class="project-tags">
-                        <span>VBA Excel</span>
-                        <span>Data Analysis</span>
-                        <span>Dashboard Design</span>
-                        <span>Cost Management</span>
-                        <span>User Management</span>
+                        <span data-i18n="projects.academic.productionCost.tags.vba">VBA Excel</span>
+                        <span data-i18n="projects.academic.productionCost.tags.dataAnalysis">Data Analysis</span>
+                        <span data-i18n="projects.academic.productionCost.tags.dashboardDesign">Dashboard Design</span>
+                        <span data-i18n="projects.academic.productionCost.tags.costManagement">Cost Management</span>
+                        <span data-i18n="projects.academic.productionCost.tags.userManagement">User Management</span>
                     </div>
                 </div>
             </div>
 
             <div class="project-card" data-category="academic">
-                <h3>MedVent</h3>
+                <h3 data-i18n="projects.academic.medVent.title">MedVent</h3>
                 <div class="project-info">
-                    <p>Event management and communication agency project at Université Chouaib Doukkali El Jadida. Led a team of 11 members to develop a solution for streamlining event organization and project marketing services, focusing on time and cost efficiency.</p>
+                    <p data-i18n="projects.academic.medVent.description">Event management and communication agency project at Université Chouaib Doukkali El Jadida. Led a team of 11 members to develop a solution for streamlining event organization and project marketing services, focusing on time and cost efficiency.</p>
                     <div class="project-meta">
                         <div class="project-duration">Oct 2022 - Dec 2022</div>
                         <div class="team-size"><i class="fas fa-users"></i> Team of 11</div>
                     </div>
                     <div class="project-tags">
-                        <span>Event Management</span>
-                        <span>Team Leadership</span>
-                        <span>Project Planning</span>
-                        <span>Marketing</span>
+                        <span data-i18n="projects.academic.medVent.tags.eventManagement">Event Management</span>
+                        <span data-i18n="projects.academic.medVent.tags.teamLeadership">Team Leadership</span>
+                        <span data-i18n="projects.academic.medVent.tags.projectPlanning">Project Planning</span>
+                        <span data-i18n="projects.academic.medVent.tags.marketing">Marketing</span>
                     </div>
                 </div>
             </div>
 
             <div class="project-card" data-category="academic">
-                <h3>MoFida</h3>
+                <h3 data-i18n="projects.academic.moFida.title">MoFida</h3>
                 <div class="project-info">
-                    <p>Developed a natural jam product using citrus fruit with organic ingredients, creating a comprehensive marketing plan. Collaborated with a team of 6 members at Université Chouaib Doukkali El Jadida to establish product positioning and go-to-market strategy.</p>
+                    <p data-i18n="projects.academic.moFida.description">Developed a natural jam product using citrus fruit with organic ingredients, creating a comprehensive marketing plan. Collaborated with a team of 6 members at Université Chouaib Doukkali El Jadida to establish product positioning and go-to-market strategy.</p>
                     <div class="project-meta">
                         <div class="project-duration">Oct 2022 - Dec 2022</div>
                         <div class="team-size"><i class="fas fa-users"></i> Team of 6</div>
                     </div>
                     <div class="project-tags">
-                        <span>Product Development</span>
-                        <span>Marketing Strategy</span>
-                        <span>Market Research</span>
-                        <span>Team Collaboration</span>
+                        <span data-i18n="projects.academic.moFida.tags.productDevelopment">Product Development</span>
+                        <span data-i18n="projects.academic.moFida.tags.marketingStrategy">Marketing Strategy</span>
+                        <span data-i18n="projects.academic.moFida.tags.marketResearch">Market Research</span>
+                        <span data-i18n="projects.academic.moFida.tags.teamCollaboration">Team Collaboration</span>
                     </div>
                 </div>
             </div>
@@ -240,6 +241,8 @@
         </div>
     </main>
 
+    <script src="../js/translations.js"></script>
+    <script src="../js/language-switcher.js"></script>
     <script src="../js/navbar.js"></script>
     <script src="../js/pages/projects.js"></script>
 </body>
