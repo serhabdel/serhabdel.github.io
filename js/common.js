@@ -1,29 +1,5 @@
 // Common JavaScript functionality
 document.addEventListener('DOMContentLoaded', () => {
-    // Theme switcher
-    const themeToggle = document.getElementById('themeToggle');
-    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-    
-    // Function to set theme
-    const setTheme = (theme) => {
-        document.documentElement.setAttribute('data-theme', theme);
-        localStorage.setItem('theme', theme);
-        // Update icon
-        const icon = themeToggle.querySelector('i');
-        icon.className = theme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
-    };
-
-    // Initialize theme
-    const savedTheme = localStorage.getItem('theme') || (prefersDarkScheme.matches ? 'dark' : 'light');
-    setTheme(savedTheme);
-
-    // Theme toggle click handler
-    themeToggle?.addEventListener('click', () => {
-        const currentTheme = document.documentElement.getAttribute('data-theme');
-        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-        setTheme(newTheme);
-    });
-
     // Mobile navigation toggle
     const menuBtn = document.querySelector('.menu-btn');
     const navRight = document.querySelector('.nav-right');
