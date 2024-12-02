@@ -8,6 +8,36 @@ document.addEventListener('DOMContentLoaded', () => {
         fr: 'https://flagcdn.com/w40/fr.png'
     };
 
+    // Function to change language dynamically
+    window.changeLanguage = function(lang) {
+        // Update localStorage
+        localStorage.setItem('selectedLanguage', lang);
+
+        // Update all translatable elements
+        const translatableElements = document.querySelectorAll('[data-i18n]');
+        translatableElements.forEach(element => {
+            const translationKey = element.getAttribute('data-i18n');
+            const keys = translationKey.split('.');
+            
+            // Navigate through the translation object
+            let translation = translations[lang];
+            for (let key of keys) {
+                translation = translation[key];
+            }
+            
+            // Update text content
+            if (translation) {
+                element.textContent = translation;
+            }
+        });
+
+        // Update page title
+        const pageTitleKey = translations[lang].pageTitle;
+        if (pageTitleKey) {
+            document.title = pageTitleKey;
+        }
+    };
+
     // Create language switcher button
     const createLanguageSwitcher = () => {
         const navControls = document.querySelector('.nav-controls');
@@ -58,23 +88,16 @@ document.addEventListener('DOMContentLoaded', () => {
             option.addEventListener('click', () => {
                 const lang = option.getAttribute('data-lang');
                 const flagSrc = option.querySelector('img').src;
-                const languageName = option.querySelector('span').textContent;
 
                 // Update current language display
                 currentLanguageFlag.src = flagSrc;
                 currentLanguageCode.textContent = lang.toUpperCase();
 
-                // Set language in localStorage
-                localStorage.setItem('selectedLanguage', lang);
-
                 // Close dropdown
                 languageDropdown.classList.remove('show');
 
-                // Update active state of language buttons
-                updateButtonStates();
-
-                // Update text content based on translations
-                updateLanguage();
+                // Change language without page refresh
+                window.changeLanguage(lang);
             });
         });
     };
