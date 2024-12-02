@@ -207,17 +207,17 @@
 }
 
 .status-badge.ongoing {
-    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    background: var(--success-gradient, linear-gradient(135deg, var(--success-light, #4CAF50), var(--success-dark, #2E7D32)));
     color: white;
 }
 
 .status-badge.completed {
-    background: linear-gradient(135deg, #2196F3, #1565C0);
+    background: var(--primary-gradient, linear-gradient(135deg, var(--primary-light, #2196F3), var(--primary-dark, #1565C0)));
     color: white;
 }
 
 .status-badge.transition {
-    background: linear-gradient(135deg, #FF9800, #F57C00);
+    background: var(--warning-gradient, linear-gradient(135deg, var(--warning-light, #FF9800), var(--warning-dark, #F57C00)));
     color: white;
 }
 

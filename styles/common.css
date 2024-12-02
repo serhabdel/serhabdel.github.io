@@ -1,5 +1,6 @@
 /* Common styles for all pages */
 :root {
+    /* Tokyo Night Theme (Dark) */
     --bg-primary: #1a1b26;
     --bg-secondary: #24283b;
     --text-primary: #a9b1d6;
@@ -10,6 +11,22 @@
     --accent-warning: #e0af68;
     --card-bg: #1f2335;
     --card-border: #292e42;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Light Theme */
+[data-theme="light"] {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f5f5f5;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --accent-primary: #2196f3;
+    --accent-secondary: #9c27b0;
+    --accent-success: #4caf50;
+    --accent-warning: #ff9800;
+    --card-bg: #ffffff;
+    --card-border: #e0e0e0;
+    --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -37,7 +54,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 10px var(--shadow-color);
 }
 
 .nav-logo {
@@ -321,7 +338,7 @@ body {
 
     .nav-right.open {
         max-height: calc(100vh - 60px);
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 2px 10px var(--shadow-color);
     }
 
     .nav-links {
