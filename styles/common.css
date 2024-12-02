@@ -29,6 +29,7 @@ body {
 .navbar {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     padding: 1rem 5%;
     background: var(--bg-secondary);
@@ -40,22 +41,28 @@ body {
 }
 
 .nav-logo {
+    flex-shrink: 0;
+}
+
+.nav-logo a {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--accent-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.nav-right {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+.nav-logo a:hover {
+    color: var(--accent-secondary);
 }
 
 .nav-links {
     display: flex;
     list-style: none;
     gap: 2rem;
-    margin-left: 2rem;
+    margin: 0 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .nav-links a {
@@ -63,6 +70,8 @@ body {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
+    white-space: nowrap;
+    font-size: 0.95rem;
 }
 
 .nav-links a:hover,
@@ -70,10 +79,30 @@ body {
     color: var(--accent-primary);
 }
 
+.nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    color: var(--accent-primary);
+}
+
 .language-switcher {
     display: flex;
     gap: 0.5rem;
-    margin-left: 1rem;
 }
 
 .lang-btn {
@@ -92,6 +121,82 @@ body {
     background: var(--accent-primary);
     border-color: var(--accent-primary);
     color: var(--bg-primary);
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--text-primary);
+    margin: 4px 0;
+    transition: 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+    .nav-links {
+        gap: 1.5rem;
+    }
+    
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.75rem 1rem;
+    }
+
+    .nav-logo a {
+        font-size: 1.3rem;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: var(--bg-secondary);
+        padding: 1rem;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        gap: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-controls {
+        gap: 0.5rem;
+    }
+
+    /* Hamburger animation */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
 }
 
 /* Menu Button */

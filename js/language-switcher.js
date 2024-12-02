@@ -4,14 +4,15 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Create language switcher button
     const createLanguageSwitcher = () => {
-        const navbar = document.querySelector('.navbar');
+        const navControls = document.querySelector('.nav-controls');
+        const hamburger = navControls.querySelector('.hamburger');
         const switcher = document.createElement('div');
         switcher.className = 'language-switcher';
         switcher.innerHTML = `
             <button class="lang-btn ${currentLang === 'en' ? 'active' : ''}" data-lang="en">EN</button>
             <button class="lang-btn ${currentLang === 'fr' ? 'active' : ''}" data-lang="fr">FR</button>
         `;
-        navbar.insertBefore(switcher, navbar.querySelector('.menu-btn'));
+        navControls.insertBefore(switcher, hamburger);
 
         // Add click event listeners
         switcher.querySelectorAll('.lang-btn').forEach(btn => {
