@@ -685,7 +685,7 @@ const translations = {
             bachelorInstitute: "FP Sidi Bennour - Université Chouaib Doukkali",
             bachelorDuration: "2020 - 2023",
             bachelorDescription: "Réalisations principales :",
-            bachelorAchievement1: "Excellents résultats académiques",
+            bachelorAchievement1: "Bons résultats académiques",
             bachelorAchievement2: "Spécialisation en Gestion Financière et Comptabilité",
             bachelorAchievement3: "Participation active aux activités étudiantes",
             previousStudiesTitle: "Études Universitaires",
