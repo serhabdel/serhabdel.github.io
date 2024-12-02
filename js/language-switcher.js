@@ -2,6 +2,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize language from localStorage or default to English
     let currentLang = localStorage.getItem('language') || 'en';
 
+    // Base64 encoded flag images
+    const flags = {
+        en: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAKElEQVQ4jWNgYGD4Twzu6FhFFGYYNXDUwGFpIAk2E4dHDRw1cDgaCAASFOffhEIO3gAAAABJRU5ErkJggg==',
+        fr: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAHklEQVQ4jWNgYGD4TwzuaDhqwGhADRw1cNSAUQMAGFsAyXDQeHUAAAAASUVORK5CYII='
+    };
+
     // Create language switcher button
     const createLanguageSwitcher = () => {
         const navControls = document.querySelector('.nav-controls');
@@ -10,16 +16,16 @@ document.addEventListener('DOMContentLoaded', () => {
         languageBtn.className = 'language-switcher';
         languageBtn.innerHTML = `
             <button class="language-btn">
-                <img src="" alt="Language" id="currentLanguageFlag">
+                <img src="${flags.en}" alt="Language" id="currentLanguageFlag">
                 <span id="currentLanguageCode">EN</span>
             </button>
             <div class="language-dropdown">
                 <div class="language-option" data-lang="en">
-                    <img src="img.icons8.com/color/96/usa.png" alt="English">
+                    <img src="${flags.en}" alt="English">
                     <span>English</span>
                 </div>
                 <div class="language-option" data-lang="fr">
-                    <img src="https://img.icons8.com/color/96/fr.png" alt="Français">
+                    <img src="${flags.fr}" alt="Français">
                     <span>Français</span>
                 </div>
             </div>
