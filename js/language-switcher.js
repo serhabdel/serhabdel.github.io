@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize language from localStorage or default to English
-    let currentLang = localStorage.getItem('language') || 'en';
+    let currentLang = localStorage.getItem('selectedLanguage') || 'en';
 
-    // Base64 encoded flag images
+    // More reliable flag images
     const flags = {
-        en: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAKElEQVQ4jWNgYGD4Twzu6FhFFGYYNXDUwGFpIAk2E4dHDRw1cDgaCAASFOffhEIO3gAAAABJRU5ErkJggg==',
-        fr: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAHklEQVQ4jWNgYGD4TwzuaDhqwGhADRw1cNSAUQMAGFsAyXDQeHUAAAAASUVORK5CYII='
+        en: 'https://flagcdn.com/w40/us.png',
+        fr: 'https://flagcdn.com/w40/fr.png'
     };
 
     // Create language switcher button
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 currentLanguageCode.textContent = lang.toUpperCase();
 
                 // Set language in localStorage
-                localStorage.setItem('language', lang);
+                localStorage.setItem('selectedLanguage', lang);
 
                 // Close dropdown
                 languageDropdown.classList.remove('show');
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateLanguage();
 
     // Initialize language on page load
-    const savedLanguage = localStorage.getItem('language') || 'en';
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
     const initialOption = document.querySelector(`.language-option[data-lang="${savedLanguage}"]`);
     if (initialOption) {
         initialOption.click();
