@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional experience of Abdelhalim Serhani - Management Controller and Finance professional. View work history and achievements.">
+    <meta name="keywords" content="Abdelhalim Serhani, Professional Experience, Management Control, Finance, OCP SA, Internships">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Professional Experience - Abdelhalim Serhani">
+    <meta property="og:description" content="Professional journey and achievements in management control and finance">
+    <meta property="og:image" content="../assets/profile.png">
+    <meta property="og:url" content="https://serhabdel.github.io/pages/experience.html">
+    
     <title data-i18n="title">Professional Experience - Abdelhalim Serhani</title>
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/pages/experience.css">
@@ -23,47 +32,109 @@
             <li><a href="courses.html" data-i18n="nav.courses">Courses</a></li>
             <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="nav-controls">
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="fr">FR</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
     <!-- Experience Section -->
     <section class="experience">
-        <h2 class="section-title" data-i18n="experience.title">Professional Experience</h2>
-        <div class="experience-grid">
+        <div class="section-header">
+            <h2 class="section-title" data-i18n="experience.title">Professional Experience</h2>
+            <p class="section-subtitle" data-i18n="experience.subtitle">My journey in finance and management control</p>
+        </div>
+
+        <div class="experience-stats">
+            <div class="stat-item">
+                <i class="fas fa-briefcase"></i>
+                <span class="stat-number">2</span>
+                <span class="stat-label" data-i18n="experience.stats.internships">Professional Internships</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-building"></i>
+                <span class="stat-number">1</span>
+                <span class="stat-label" data-i18n="experience.stats.companies">Company (OCP SA)</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-clock"></i>
+                <span class="stat-number">5</span>
+                <span class="stat-label" data-i18n="experience.stats.months">Months Experience</span>
+            </div>
+        </div>
+
+        <div class="experience-timeline">
             <!-- Finance Internship -->
             <div class="experience-item">
                 <div class="exp-header">
                     <div class="exp-title">
-                        <h3 data-i18n="experience.internships.finance.title">Finance Internship</h3>
-                        <p class="company" data-i18n="experience.internships.finance.company">JFC IV SA - OCP SA</p>
-                        <p class="duration" data-i18n="experience.internships.finance.duration">June 2023 - August 2023</p>
-                    </div>
-                    <div class="exp-skills">
-                        <span data-i18n="experience.internships.finance.skills.0">Excel</span>
-                        <span data-i18n="experience.internships.finance.skills.1">VBA</span>
-                        <span data-i18n="experience.internships.finance.skills.2">Finance</span>
-                        <span data-i18n="experience.internships.finance.skills.3">Taxation</span>
+                        <div class="title-wrapper">
+                            <h3 data-i18n="experience.internships.finance.title">Finance Internship</h3>
+                            <span class="exp-badge">Latest</span>
+                        </div>
+                        <div class="company-info">
+                            <i class="fas fa-building"></i>
+                            <p class="company" data-i18n="experience.internships.finance.company">JFC IV SA - OCP SA</p>
+                        </div>
+                        <div class="duration-info">
+                            <i class="fas fa-calendar-alt"></i>
+                            <p class="duration" data-i18n="experience.internships.finance.duration">June 2023 - August 2023</p>
+                        </div>
                     </div>
                 </div>
+                
                 <div class="exp-content">
+                    <div class="exp-skills">
+                        <h4><i class="fas fa-tools"></i> Key Skills</h4>
+                        <div class="skills-grid">
+                            <span class="skill-tag" data-i18n="experience.internships.finance.skills.0">Excel</span>
+                            <span class="skill-tag" data-i18n="experience.internships.finance.skills.1">VBA</span>
+                            <span class="skill-tag" data-i18n="experience.internships.finance.skills.2">Finance</span>
+                            <span class="skill-tag" data-i18n="experience.internships.finance.skills.3">Taxation</span>
+                        </div>
+                    </div>
+
                     <div class="exp-description">
+                        <h4><i class="fas fa-tasks"></i> Responsibilities</h4>
                         <ul>
-                            <li data-i18n="experience.internships.finance.description.0">Continuation of the development of the management control system</li>
-                            <li data-i18n="experience.internships.finance.description.1">Exploring the practice of financial analysis</li>
+                            <li data-i18n="experience.internships.finance.description.0">
+                                <i class="fas fa-check-circle"></i>
+                                Continuation of the development of the management control system
+                            </li>
+                            <li data-i18n="experience.internships.finance.description.1">
+                                <i class="fas fa-check-circle"></i>
+                                Exploring the practice of financial analysis
+                            </li>
                         </ul>
                     </div>
+
                     <div class="exp-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-chart-line"></i>
-                            <span data-i18n="experience.internships.finance.highlights.financial">Financial Analysis</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-cogs"></i>
-                            <span data-i18n="experience.internships.finance.highlights.system">System Development</span>
+                        <h4><i class="fas fa-star"></i> Key Achievements</h4>
+                        <div class="highlights-grid">
+                            <div class="highlight-item">
+                                <i class="fas fa-chart-line"></i>
+                                <div class="highlight-content">
+                                    <h5 data-i18n="experience.internships.finance.highlights.financial">Financial Analysis</h5>
+                                    <p data-i18n="experience.internships.finance.highlights.financialDesc">Conducted comprehensive financial analysis to support decision-making</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-cogs"></i>
+                                <div class="highlight-content">
+                                    <h5 data-i18n="experience.internships.finance.highlights.system">System Development</h5>
+                                    <p data-i18n="experience.internships.finance.highlights.systemDesc">Enhanced management control systems for better efficiency</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -73,40 +144,80 @@
             <div class="experience-item">
                 <div class="exp-header">
                     <div class="exp-title">
-                        <h3 data-i18n="experience.internships.controller.title">Management Controller | End-Of-Study Internship</h3>
-                        <p class="company" data-i18n="experience.internships.controller.company">JFC IV SA - OCP SA</p>
-                        <p class="duration" data-i18n="experience.internships.controller.duration">April 2023 - June 2023</p>
-                    </div>
-                    <div class="exp-skills">
-                        <span data-i18n="experience.internships.controller.skills.0">Management Control</span>
-                        <span data-i18n="experience.internships.controller.skills.1">Communication</span>
-                        <span data-i18n="experience.internships.controller.skills.2">Data Collection</span>
-                        <span data-i18n="experience.internships.controller.skills.3">Data Analysis</span>
-                        <span data-i18n="experience.internships.controller.skills.4">Advanced Excel</span>
-                        <span data-i18n="experience.internships.controller.skills.5">VBA</span>
+                        <div class="title-wrapper">
+                            <h3 data-i18n="experience.internships.controller.title">Management Controller | End-Of-Study Internship</h3>
+                            <span class="exp-badge featured">Featured</span>
+                        </div>
+                        <div class="company-info">
+                            <i class="fas fa-building"></i>
+                            <p class="company" data-i18n="experience.internships.controller.company">JFC IV SA - OCP SA</p>
+                        </div>
+                        <div class="duration-info">
+                            <i class="fas fa-calendar-alt"></i>
+                            <p class="duration" data-i18n="experience.internships.controller.duration">April 2023 - June 2023</p>
+                        </div>
                     </div>
                 </div>
+
                 <div class="exp-content">
+                    <div class="exp-skills">
+                        <h4><i class="fas fa-tools"></i> Key Skills</h4>
+                        <div class="skills-grid">
+                            <span class="skill-tag" data-i18n="experience.internships.controller.skills.0">Management Control</span>
+                            <span class="skill-tag" data-i18n="experience.internships.controller.skills.1">Communication</span>
+                            <span class="skill-tag" data-i18n="experience.internships.controller.skills.2">Data Collection</span>
+                            <span class="skill-tag" data-i18n="experience.internships.controller.skills.3">Data Analysis</span>
+                            <span class="skill-tag" data-i18n="experience.internships.controller.skills.4">Advanced Excel</span>
+                            <span class="skill-tag" data-i18n="experience.internships.controller.skills.5">VBA</span>
+                        </div>
+                    </div>
+
                     <div class="exp-description">
+                        <h4><i class="fas fa-tasks"></i> Key Responsibilities</h4>
                         <ul>
-                            <li data-i18n="experience.internships.controller.description.0">Development of a management control system for calculating production costs for two fertilizing products</li>
-                            <li data-i18n="experience.internships.controller.description.1">Determination of cost centers to identify direct and indirect costs</li>
-                            <li data-i18n="experience.internships.controller.description.2">Calculation of the cost price of finished products</li>
-                            <li data-i18n="experience.internships.controller.description.3">Developing an Excel application with VBA for calculating daily production costs</li>
+                            <li data-i18n="experience.internships.controller.description.0">
+                                <i class="fas fa-check-circle"></i>
+                                Development of a management control system for calculating production costs for two fertilizing products
+                            </li>
+                            <li data-i18n="experience.internships.controller.description.1">
+                                <i class="fas fa-check-circle"></i>
+                                Determination of cost centers to identify direct and indirect costs
+                            </li>
+                            <li data-i18n="experience.internships.controller.description.2">
+                                <i class="fas fa-check-circle"></i>
+                                Calculation of the cost price of finished products
+                            </li>
+                            <li data-i18n="experience.internships.controller.description.3">
+                                <i class="fas fa-check-circle"></i>
+                                Developing an Excel application with VBA for calculating daily production costs
+                            </li>
                         </ul>
                     </div>
+
                     <div class="exp-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-calculator"></i>
-                            <span data-i18n="experience.internships.controller.highlights.cost">Cost Analysis</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-code"></i>
-                            <span data-i18n="experience.internships.controller.highlights.vba">VBA Development</span>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-industry"></i>
-                            <span data-i18n="experience.internships.controller.highlights.production">Production Costs</span>
+                        <h4><i class="fas fa-star"></i> Key Achievements</h4>
+                        <div class="highlights-grid">
+                            <div class="highlight-item">
+                                <i class="fas fa-calculator"></i>
+                                <div class="highlight-content">
+                                    <h5 data-i18n="experience.internships.controller.highlights.cost">Cost Analysis</h5>
+                                    <p data-i18n="experience.internships.controller.highlights.costDesc">Developed comprehensive cost analysis system for production</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-code"></i>
+                                <div class="highlight-content">
+                                    <h5 data-i18n="experience.internships.controller.highlights.vba">VBA Development</h5>
+                                    <p data-i18n="experience.internships.controller.highlights.vbaDesc">Created automated Excel solutions using VBA</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-industry"></i>
+                                <div class="highlight-content">
+                                    <h5 data-i18n="experience.internships.controller.highlights.production">Production Costs</h5>
+                                    <p data-i18n="experience.internships.controller.highlights.productionDesc">Optimized production cost calculation methods</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -118,5 +229,6 @@
     <script src="../js/language-switcher.js"></script>
     <script src="../js/common.js"></script>
     <script src="../js/pages/experience.js"></script>
+    <script src="../js/theme.js"></script>
 </body>
 </html>

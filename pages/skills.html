@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional skills and competencies of Abdelhalim Serhani - Finance, Management, Software, and Programming expertise.">
+    <meta name="keywords" content="Abdelhalim Serhani, Skills, Finance, Management, Software, Programming, Languages">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Professional Skills - Abdelhalim Serhani">
+    <meta property="og:description" content="Comprehensive overview of professional skills and competencies">
+    <meta property="og:image" content="../assets/profile.png">
+    <meta property="og:url" content="https://serhabdel.github.io/pages/skills.html">
+    
     <title data-i18n="skills.title">Professional Skills - Abdelhalim Serhani</title>
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/pages/skills.css">
@@ -23,24 +32,67 @@
             <li><a href="courses.html" data-i18n="nav.courses">Courses</a></li>
             <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="nav-controls">
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="fr">FR</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
     <!-- Skills Section -->
     <section class="skills">
-        <h2 class="section-title" data-i18n="skills.title">Professional Skills</h2>
+        <div class="section-header">
+            <h2 class="section-title" data-i18n="skills.title">Professional Skills</h2>
+            <p class="section-subtitle" data-i18n="skills.subtitle">A comprehensive overview of my professional competencies and expertise</p>
+        </div>
+
+        <!-- Skill Categories Overview -->
+        <div class="skills-overview">
+            <div class="overview-item" data-category="finance">
+                <i class="fas fa-chart-line"></i>
+                <h3 data-i18n="skills.overview.finance">Finance & Accounting</h3>
+                <p data-i18n="skills.overview.financeDesc">Expert in financial analysis, cost management, and corporate finance</p>
+            </div>
+            <div class="overview-item" data-category="management">
+                <i class="fas fa-tasks"></i>
+                <h3 data-i18n="skills.overview.management">Management & Strategy</h3>
+                <p data-i18n="skills.overview.managementDesc">Strategic planning and performance management specialist</p>
+            </div>
+            <div class="overview-item" data-category="software">
+                <i class="fas fa-laptop-code"></i>
+                <h3 data-i18n="skills.overview.software">Software Proficiency</h3>
+                <p data-i18n="skills.overview.softwareDesc">Advanced user of business and productivity software</p>
+            </div>
+            <div class="overview-item" data-category="programming">
+                <i class="fas fa-code"></i>
+                <h3 data-i18n="skills.overview.programming">Programming</h3>
+                <p data-i18n="skills.overview.programmingDesc">Skilled in multiple programming languages and tools</p>
+            </div>
+        </div>
         
-        <!-- Technical Skills -->
+        <!-- Skills Container -->
         <div class="skills-container">
-            <div class="skill-category finance-skills">
-                <h3><i class="fas fa-chart-line"></i> <span data-i18n="skills.finance.title">Finance & Accounting</span></h3>
+            <!-- Finance Skills -->
+            <div class="skill-category finance-skills" id="finance">
+                <div class="category-header">
+                    <i class="fas fa-chart-line"></i>
+                    <h3 data-i18n="skills.finance.title">Finance & Accounting</h3>
+                </div>
                 <div class="skill-grid">
-                    <div class="skill-item">
-                        <span class="skill-name" data-i18n="skills.finance.skills.financial.name">Financial Analysis</span>
+                    <div class="skill-item" data-aos="fade-up">
+                        <div class="skill-header">
+                            <span class="skill-name" data-i18n="skills.finance.skills.financial.name">Financial Analysis</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
                         <div class="skill-details">
                             <ul>
                                 <li data-i18n="skills.finance.skills.financial.details.0">DCF Modeling</li>
@@ -53,8 +105,11 @@
                             <div class="skill-progress" style="width: 90%"></div>
                         </div>
                     </div>
-                    <div class="skill-item">
-                        <span class="skill-name" data-i18n="skills.finance.skills.cost.name">Cost Management</span>
+                    <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="skill-header">
+                            <span class="skill-name" data-i18n="skills.finance.skills.cost.name">Cost Management</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
                         <div class="skill-details">
                             <ul>
                                 <li data-i18n="skills.finance.skills.cost.details.0">Absorption Costing</li>
@@ -112,8 +167,12 @@
                 </div>
             </div>
 
-            <div class="skill-category management-skills">
-                <h3><i class="fas fa-tasks"></i> <span data-i18n="skills.management.title">Management & Strategy</span></h3>
+            <!-- Management Skills -->
+            <div class="skill-category management-skills" id="management">
+                <div class="category-header">
+                    <i class="fas fa-tasks"></i>
+                    <h3 data-i18n="skills.management.title">Management & Strategy</h3>
+                </div>
                 <div class="skill-grid">
                     <div class="skill-item">
                         <span class="skill-name" data-i18n="skills.management.skills.strategic.name">Strategic Planning</span>
@@ -160,8 +219,11 @@
             </div>
 
             <!-- Software Skills -->
-            <div class="skill-category software-skills">
-                <h3><i class="fas fa-laptop-code"></i> <span data-i18n="skills.software.title">Software Proficiency</span></h3>
+            <div class="skill-category software-skills" id="software">
+                <div class="category-header">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3 data-i18n="skills.software.title">Software Proficiency</h3>
+                </div>
                 <div class="software-grid">
                     <div class="software-item">
                         <img src="https://img.icons8.com/color/96/microsoft-excel-2019--v1.png" alt="Excel" class="software-icon">
@@ -318,7 +380,7 @@
             </div>
 
             <!-- Programming Languages -->
-            <div class="skill-category programming-skills">
+            <div class="skill-category programming-skills" id="programming">
                 <h3><i class="fas fa-code"></i> <span data-i18n="skills.programming.title">Programming Languages & Tools</span></h3>
                 <div class="programming-grid">
                     <!-- .NET MAUI & Desktop Development -->
@@ -389,8 +451,11 @@
             </div>
 
             <!-- Languages -->
-            <div class="skill-category languages">
-                <h3><i class="fas fa-language"></i> <span data-i18n="skills.languages.title">Languages</span></h3>
+            <div class="skill-category languages" id="languages">
+                <div class="category-header">
+                    <i class="fas fa-language"></i>
+                    <h3 data-i18n="skills.languages.title">Languages</h3>
+                </div>
                 <div class="languages-grid">
                     <div class="language-item">
                         <div class="language-header">
@@ -460,6 +525,7 @@
     <script src="../js/translations.js"></script>
     <script src="../js/language-switcher.js"></script>
     <script src="../js/common.js"></script>
+    <script src="../js/theme.js"></script>
     <script src="../js/pages/skills.js"></script>
 </body>
 </html>

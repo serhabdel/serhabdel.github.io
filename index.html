@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abdelhalim Serhani - Future Management Controller. Portfolio showcasing skills in finance, management, and work automation.">
+    <meta name="keywords" content="Abdelhalim Serhani, Management Controller, Finance, Portfolio, Management, Work Automation">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Abdelhalim Serhani - Portfolio">
+    <meta property="og:description" content="Future Management Controller with expertise in finance and work automation">
+    <meta property="og:image" content="assets/profile.png">
+    <meta property="og:url" content="https://serhabdel.github.io">
+    
     <title>Abdelhalim Serhani - Portfolio</title>
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/pages/home.css">
@@ -23,10 +32,19 @@
             <li><a href="pages/courses.html" data-i18n="nav.courses">Courses</a></li>
             <li><a href="pages/contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="nav-controls">
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="fr">FR</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
@@ -34,12 +52,12 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <div class="profile-image">
-                <img src="assets/profile.png" alt="Abdelhalim Serhani" class="profile-pic">
+                <img src="assets/profile.png" alt="Abdelhalim Serhani" class="profile-pic animate-profile">
             </div>
-            <h1 data-i18n="home.title">Hi, I'm Abdelhalim Serhani</h1>
-            <p class="hero-subtitle" data-i18n="home.subtitle">Future Management Controller</p>
-            <p class="hero-description" data-i18n="home.description">Looking for an EOS Internship</p>
-            <p class="hero-bio" data-i18n="home.bio">A very passionate, curious and serious young man about everything related to the world of finance and management, also about work automation.</p>
+            <h1 class="animate-text" data-i18n="home.title">Hi, I'm Abdelhalim Serhani</h1>
+            <p class="hero-subtitle animate-text" data-i18n="home.subtitle">Future Management Controller</p>
+            <p class="hero-description animate-text" data-i18n="home.description">Looking for an EOS Internship</p>
+            <p class="hero-bio animate-text" data-i18n="home.bio">A very passionate, curious and serious young man about everything related to the world of finance and management, also about work automation.</p>
             
             <div class="key-highlights">
                 <div class="highlight-item">
@@ -60,6 +78,17 @@
                     <p data-i18n="home.keySkillsText">Financial Analysis, Management Control, Excel</p>
                     <a href="pages/skills.html" class="highlight-link" data-i18n="home.seeAllSkills">See All Skills</a>
                 </div>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="assets/CV-Abdelhalim-Serhani.pdf" class="cta-button primary" download>
+                    <i class="fas fa-download"></i>
+                    Download CV
+                </a>
+                <a href="pages/contact.html" class="cta-button secondary">
+                    <i class="fas fa-envelope"></i>
+                    Contact Me
+                </a>
             </div>
 
             <!-- Professional Apps Section -->
@@ -134,5 +163,6 @@
     <script src="js/navbar.js"></script>
     <script src="js/common.js"></script>
     <script src="js/pages/home.js"></script>
+    <script src="js/theme.js"></script>
 </body>
 </html>

@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academic background of Abdelhalim Serhani - Master's in Accounting, Control and Audit. View educational journey and achievements.">
+    <meta name="keywords" content="Abdelhalim Serhani, Academic Background, Master's Degree, Finance Education, Management Control">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Academic Background - Abdelhalim Serhani">
+    <meta property="og:description" content="Educational journey and achievements in finance and management control">
+    <meta property="og:image" content="../assets/profile.png">
+    <meta property="og:url" content="https://serhabdel.github.io/pages/academic.html">
+    
     <title>Academic Background - Abdelhalim Serhani</title>
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/pages/academic.css">
@@ -23,16 +32,47 @@
             <li><a href="courses.html" data-i18n="nav.courses">Courses</a></li>
             <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
         </ul>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="nav-controls">
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="fr">FR</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
     <!-- Academic Journey Section -->
     <section class="academic">
-        <h2 class="section-title" data-i18n="academic.title">Academic Background</h2>
+        <div class="section-header">
+            <h2 class="section-title" data-i18n="academic.title">Academic Background</h2>
+            <p class="section-subtitle" data-i18n="academic.subtitle">My educational journey in finance and management</p>
+        </div>
+
+        <div class="education-stats">
+            <div class="stat-item">
+                <i class="fas fa-clock"></i>
+                <span class="stat-number">4+</span>
+                <span class="stat-label" data-i18n="academic.stats.years">Years of Education</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-graduation-cap"></i>
+                <span class="stat-number">2</span>
+                <span class="stat-label" data-i18n="academic.stats.degrees">Degrees</span>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-star"></i>
+                <span class="stat-number">3.8</span>
+                <span class="stat-label" data-i18n="academic.stats.gpa">GPA</span>
+            </div>
+        </div>
+
         <div class="timeline">
             <!-- Current - Master's Degree -->
             <div class="timeline-item current">
@@ -40,22 +80,39 @@
                     <i class="fas fa-graduation-cap"></i>
                 </div>
                 <div class="timeline-content">
-                    <div class="timeline-date" data-i18n="academic.masterDuration">2023 - Present</div>
-                    <h3 data-i18n="academic.masterTitle">Master's in Accounting, Auditing and Management Control</h3>
-                    <p class="institution" data-i18n="academic.masterInstitute">FEG Béni Mellal - Sultan Moulay Slimane University</p>
-                    <div class="status">
-                        <span class="status-badge ongoing">
-                            <i class="fas fa-clock"></i> <span data-i18n="academic.status.ongoing">Ongoing</span>
-                        </span>
+                    <div class="timeline-header">
+                        <div class="timeline-date" data-i18n="academic.masterDuration">2023 - Present</div>
+                        <div class="status">
+                            <span class="status-badge ongoing">
+                                <i class="fas fa-clock"></i> <span data-i18n="academic.status.ongoing">Ongoing</span>
+                            </span>
+                        </div>
                     </div>
+                    <h3 data-i18n="academic.masterTitle">Master's in Accounting, Auditing and Management Control</h3>
+                    <p class="institution">
+                        <i class="fas fa-university"></i>
+                        <span data-i18n="academic.masterInstitute">FEG Béni Mellal - Sultan Moulay Slimane University</span>
+                    </p>
                     <div class="timeline-details">
                         <p data-i18n="academic.masterDescription">Specializing in management control, financial analysis, and business process optimization</p>
-                        <ul>
-                            <li data-i18n="academic.masterSpecialization1">Financial Audit</li>
-                            <li data-i18n="academic.masterSpecialization2">Management Control</li>
-                            <li data-i18n="academic.masterSpecialization3">Financial Management</li>
-                            <li data-i18n="academic.masterSpecialization4">Corporate Governance</li>
-                        </ul>
+                        <div class="specializations">
+                            <div class="specialization-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span data-i18n="academic.masterSpecialization1">Financial Audit</span>
+                            </div>
+                            <div class="specialization-item">
+                                <i class="fas fa-cogs"></i>
+                                <span data-i18n="academic.masterSpecialization2">Management Control</span>
+                            </div>
+                            <div class="specialization-item">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <span data-i18n="academic.masterSpecialization3">Financial Management</span>
+                            </div>
+                            <div class="specialization-item">
+                                <i class="fas fa-building"></i>
+                                <span data-i18n="academic.masterSpecialization4">Corporate Governance</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -66,21 +123,35 @@
                     <i class="fas fa-award"></i>
                 </div>
                 <div class="timeline-content">
-                    <div class="timeline-date" data-i18n="academic.bachelorDuration">2020 - 2023</div>
-                    <h3 data-i18n="academic.bachelorTitle">Bachelor's in Finance and Accounting</h3>
-                    <p class="institution" data-i18n="academic.bachelorInstitute">FP Sidi Bennour - Chouaib Doukkali University</p>
-                    <div class="status">
-                        <span class="status-badge completed">
-                            <i class="fas fa-check"></i> <span data-i18n="academic.status.completed">Completed with Good Standing</span>
-                        </span>
+                    <div class="timeline-header">
+                        <div class="timeline-date" data-i18n="academic.bachelorDuration">2020 - 2023</div>
+                        <div class="status">
+                            <span class="status-badge completed">
+                                <i class="fas fa-check"></i> <span data-i18n="academic.status.completed">Completed with Good Standing</span>
+                            </span>
+                        </div>
                     </div>
+                    <h3 data-i18n="academic.bachelorTitle">Bachelor's in Finance and Accounting</h3>
+                    <p class="institution">
+                        <i class="fas fa-university"></i>
+                        <span data-i18n="academic.bachelorInstitute">FP Sidi Bennour - Chouaib Doukkali University</span>
+                    </p>
                     <div class="timeline-details">
                         <p data-i18n="academic.bachelorDescription">Key achievements:</p>
-                        <ul>
-                            <li data-i18n="academic.bachelorAchievement1">Strong academic performance</li>
-                            <li data-i18n="academic.bachelorAchievement2">Specialized in Financial Management and Accounting</li>
-                            <li data-i18n="academic.bachelorAchievement3">Active participation in student activities</li>
-                        </ul>
+                        <div class="achievements">
+                            <div class="achievement-item">
+                                <i class="fas fa-trophy"></i>
+                                <span data-i18n="academic.bachelorAchievement1">Strong academic performance</span>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-book"></i>
+                                <span data-i18n="academic.bachelorAchievement2">Specialized in Financial Management and Accounting</span>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-users"></i>
+                                <span data-i18n="academic.bachelorAchievement3">Active participation in student activities</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -91,21 +162,35 @@
                     <i class="fas fa-book"></i>
                 </div>
                 <div class="timeline-content">
-                    <div class="timeline-date" data-i18n="academic.previousStudiesDuration">2019 - 2020</div>
-                    <h3 data-i18n="academic.previousStudiesTitle">University Studies</h3>
-                    <p class="institution" data-i18n="academic.previousStudiesInstitute">FST Béni Mellal - Sultan Moulay Slimane University</p>
-                    <div class="status">
-                        <span class="status-badge transition">
-                            <i class="fas fa-route"></i> <span data-i18n="academic.status.transition">Career Path Transition</span>
-                        </span>
+                    <div class="timeline-header">
+                        <div class="timeline-date" data-i18n="academic.previousStudiesDuration">2019 - 2020</div>
+                        <div class="status">
+                            <span class="status-badge transition">
+                                <i class="fas fa-route"></i> <span data-i18n="academic.status.transition">Career Path Transition</span>
+                            </span>
+                        </div>
                     </div>
+                    <h3 data-i18n="academic.previousStudiesTitle">University Studies</h3>
+                    <p class="institution">
+                        <i class="fas fa-university"></i>
+                        <span data-i18n="academic.previousStudiesInstitute">FST Béni Mellal - Sultan Moulay Slimane University</span>
+                    </p>
                     <div class="timeline-details">
                         <p data-i18n="academic.previousStudiesDescription">A period of exploration and self-discovery that led to:</p>
-                        <ul>
-                            <li data-i18n="academic.previousStudiesOutcome1">Discovering passion for business and finance</li>
-                            <li data-i18n="academic.previousStudiesOutcome2">Redirecting towards management studies</li>
-                            <li data-i18n="academic.previousStudiesOutcome3">Building foundation for future success</li>
-                        </ul>
+                        <div class="outcomes">
+                            <div class="outcome-item">
+                                <i class="fas fa-lightbulb"></i>
+                                <span data-i18n="academic.previousStudiesOutcome1">Discovering passion for business and finance</span>
+                            </div>
+                            <div class="outcome-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span data-i18n="academic.previousStudiesOutcome2">Redirecting towards management studies</span>
+                            </div>
+                            <div class="outcome-item">
+                                <i class="fas fa-building"></i>
+                                <span data-i18n="academic.previousStudiesOutcome3">Building foundation for future success</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -116,16 +201,30 @@
                     <i class="fas fa-school"></i>
                 </div>
                 <div class="timeline-content">
-                    <div class="timeline-date" data-i18n="academic.highSchoolDuration">2019</div>
+                    <div class="timeline-header">
+                        <div class="timeline-date" data-i18n="academic.highSchoolDuration">2019</div>
+                    </div>
                     <h3 data-i18n="academic.highSchoolTitle">High School Diploma (Baccalauréat)</h3>
-                    <p class="institution" data-i18n="academic.highSchoolInstitute">30 July High School</p>
+                    <p class="institution">
+                        <i class="fas fa-school"></i>
+                        <span data-i18n="academic.highSchoolInstitute">30 July High School</span>
+                    </p>
                     <div class="timeline-details">
                         <p data-i18n="academic.highSchoolDescription">Academic foundations:</p>
-                        <ul>
-                            <li data-i18n="academic.highSchoolFoundation1">Strong academic performance</li>
-                            <li data-i18n="academic.highSchoolFoundation2">Development of analytical skills</li>
-                            <li data-i18n="academic.highSchoolFoundation3">First step towards higher education</li>
-                        </ul>
+                        <div class="foundations">
+                            <div class="foundation-item">
+                                <i class="fas fa-book"></i>
+                                <span data-i18n="academic.highSchoolFoundation1">Strong academic performance</span>
+                            </div>
+                            <div class="foundation-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span data-i18n="academic.highSchoolFoundation2">Development of analytical skills</span>
+                            </div>
+                            <div class="foundation-item">
+                                <i class="fas fa-building"></i>
+                                <span data-i18n="academic.highSchoolFoundation3">First step towards higher education</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -136,5 +235,6 @@
     <script src="../js/pages/academic.js"></script>
     <script src="../js/translations.js"></script>
     <script src="../js/language-switcher.js"></script>
+    <script src="../js/theme.js"></script>
 </body>
 </html>
